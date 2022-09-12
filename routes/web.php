@@ -7,7 +7,16 @@ use App\Http\Livewire\Auth\RegisterComponent;
 use App\Http\Livewire\Auth\ResetPasswordComponent;
 use App\Http\Livewire\Auth\ForgotPasswordComponent;
 use App\Http\Livewire\Dashboard\DashboardComponent;
+use App\Http\Livewire\Dashboard\User\UserComponent;
 use App\Http\Livewire\Auth\ConfirmPasswordComponent;
+use App\Http\Livewire\Dashboard\Objet\ObjetComponent;
+use App\Http\Livewire\Dashboard\Structure\StrutureComponent;
+use App\Http\Livewire\Dashboard\Formation\FormationComponent;
+use App\Http\Livewire\Dashboard\Type\TypePatenariatComponent;
+use App\Http\Livewire\Site\Partenariat\AllPartenariatComponent;
+use App\Http\Livewire\Site\Partenariat\MesPartenariatComponent;
+use App\Http\Livewire\Site\Partenariat\CreationPartenariatComponent;
+use App\Http\Livewire\Site\Partenariat\ModifierPartenariatComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,15 +49,27 @@ Route::get('/register', RegisterComponent::class)->name('register');
         App::setLocale($locale);
         return redirect()->back();
       })->name('lang');
+      Route::get('/creation-de-partenariat', CreationPartenariatComponent::class)->name('creation.de.artenariat');
+      Route::get('/mditifcation-de-partenariat', ModifierPartenariatComponent::class)->name('modification.de.artenariat');
+      Route::get('/liste-de-mes-partenariat', MesPartenariatComponent::class)->name('mes.partenariat');
+
+
+
 
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),  'verified'])->group(function () {
         Route::prefix('admin')->group(function () {
+        Route::get('/liste-des-entites', FormationComponent::class)->name('entite');
+        Route::get('/liste-des-object', ObjetComponent::class)->name('object');
+        Route::get('/liste-des-structures', StrutureComponent::class)->name('struture');
+        Route::get('/liste-des-types', TypePatenariatComponent::class)->name('type');
+        Route::get('/liste-de-tous-les-partenariat', AllPartenariatComponent::class)->name('allpartenariat');
+
 
 
         });
 
         Route::prefix('administration')->group(function () {
-            // Route::get('/liste-utilisateurs', UserComponent::class)->name('admin.user-index');
+            Route::get('/liste-utilisateurs', UserComponent::class)->name('admin.user-index');
         });
 });
 

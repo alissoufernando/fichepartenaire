@@ -7,7 +7,7 @@
 @section('breadcrumb-items')
 <li class="breadcrumb-item active">Dashboard</li>
 @endsection
-
+<div>
 <!-- Container-fluid starts-->
 <div class="container-fluid">
   <div class="row">
@@ -24,5 +24,6 @@
   </div>
 </div>
 <!-- Container-fluid Ends-->
+</div>
 @section('scripts')
 @endsection

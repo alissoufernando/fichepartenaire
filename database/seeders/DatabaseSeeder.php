@@ -2,12 +2,13 @@
 
 namespace Database\Seeders;
 
-use App\Models\Brand;
-use App\Models\Product;
-use App\Models\Category;
-use App\Models\ProductImage;
 use Illuminate\Database\Seeder;
 use Database\Seeders\RoleTableSeeder;
+use Database\Seeders\TypeTableSeeder;
+use Database\Seeders\UserTableSeeder;
+use Database\Seeders\ObjectTableSeeder;
+use Database\Seeders\EntitieTableSeeder;
+use Database\Seeders\PartenaireTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,7 +23,11 @@ class DatabaseSeeder extends Seeder
 
             RoleTableSeeder::class,
             UserTableSeeder::class,
-
+            EntitieTableSeeder::class,
+            ObjectTableSeeder::class,
+            PartenaireTableSeeder::class,
+            StructureTableSeeder::class,
+            TypeTableSeeder::class,
         ]);
 
     }

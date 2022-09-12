@@ -91,9 +91,9 @@ class ObjetComponent extends Component
 
     public function render()
     {
-        $objects = objectPartener::all();
+        $objets = objectPartener::all();
         return view('livewire.dashboard.objet.objet-component',[
-            'objects' => $objects,
+            'objets' => $objets,
         ]);
     }
 }

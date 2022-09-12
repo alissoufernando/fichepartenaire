@@ -15,6 +15,12 @@ class CreateOtherInfosTable extends Migration
     {
         Schema::create('other_infos', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('partner_id')->constrained('partners')->onUpdate('cascade')->onDelete('cascade');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('phone_whatsapp')->nullable();
+            $table->string('identite');
+            $table->string('poste');
             $table->timestamps();
         });
     }

@@ -10,13 +10,34 @@
             <a href="{{route('welcome')}}" class="sidebar-header {{ Route::currentRouteName()== 'welcome' ? 'active' : '' }}"><i data-feather="home"></i><span>Home</span></i>
             </a>
         </li> --}}
-      <li class="{{request()->route()->getPrefix() == '/admin' ? 'active' : '' }}">
-        <a class="sidebar-header" ><i data-feather="home"></i><span>{{ trans('lang.Dashboard') }}</span>
-          <span class="badge rounded-pill badge-primary">6</span><i class="fa fa-angle-right pull-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-        </ul>
-      </li>
+        <li>
+            <a href="{{route('creation.de.artenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'creation.de.artenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>créer un partenariat</span></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{route('allpartenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'allpartenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>Tous les partenariats</span></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{route('mes.partenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'mes.partenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>Mes partenariats</span></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{route('entite')}}" class="sidebar-header {{ Route::currentRouteName()== 'entite' ? 'active' : '' }}"><i data-feather="home"></i><span>Entités</span></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{route('object')}}" class="sidebar-header {{ Route::currentRouteName()== 'object' ? 'active' : '' }}"><i data-feather="home"></i><span>Objects partenariat</span></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{route('struture')}}" class="sidebar-header {{ Route::currentRouteName()== 'struture' ? 'active' : '' }}"><i data-feather="home"></i><span>Strutures</span></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{route('type')}}" class="sidebar-header {{ Route::currentRouteName()== 'type' ? 'active' : '' }}"><i data-feather="home"></i><span>Types de partenariat</span></i>
+            </a>
+        </li>
 
 
         <li class="{{request()->route()->getPrefix() == '/administration' ? 'active' : '' }}">
