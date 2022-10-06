@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\otherInfo;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class partenaire extends Model
 {
@@ -12,4 +13,14 @@ class partenaire extends Model
         'name',
 
     ];
+
+    public function partner()
+    {
+        return $this->belongsTo(partner::class);
+    }
+
+    public function otherInfo()
+    {
+        return $this->belongsTo(otherInfo::class);
+    }
 }

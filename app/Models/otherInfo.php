@@ -9,11 +9,14 @@ class otherInfo extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'partner_id',
         'email',
         'phone',
         'phone_whatsapp',
         'identite',
         'poste',
     ];
+    public function partner()
+    {
+        return $this->belongsTo(partner::class);
+    }
 }

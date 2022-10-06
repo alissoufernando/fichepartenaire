@@ -15,91 +15,112 @@ use Illuminate\Support\Facades\Auth;
 
 class CreationPartenariatComponent extends Component
 {
-    public $entitled, $year_of_execution, $partner_id, $uac_structure_id, $uac_entitie_id, $resultat;
-    public $partenaire_id,  $type_id, $object_partener_id, $year_signature, $year_collect, $suggestions, $difficults;
+    public $entitled, $year_of_execution, $partner_id, $uac_structure_id = [],$uac_structure_n =0, $uac_entitie_id=[], $uac_entitie_n=0, $resultat;
+    public $partenaire_id,  $type_id, $object_partener_id=[], $year_signature, $year_collect, $suggestions, $difficults;
     public $email, $phone, $phone_whatsapp, $identite, $poste;
 
-    public $is_whatsapp=0, $nmber=0;
+    public $is_whatsapp=0, $nmber=0 ,$nmbResulttat = 1;
 
     public function resetInputFields()
     {
         // Clean errors if were visible before
         $this->resetErrorBag();
         $this->resetValidation();
-        $this->reset(['email','phone','phone_whatsapp','identite','poste','name', 'entitled', 'year_of_execution', 'partner_id','uac_structure_id', 'uac_entitie_id', 'resultat','type_id','object_partener_id','difficults', 'suggestions','year_collect','year_signature']);
+        $this->reset(['email','phone','phone_whatsapp','identite','poste', 'entitled', 'year_of_execution', 'partner_id','uac_structure_id', 'uac_entitie_id', 'resultat','type_id','object_partener_id','difficults', 'suggestions','year_collect','year_signature']);
 
     }
-    public function mount() {
-        $this->status_stock = 'instock';
-        $this->status = 1;
-        $this->featured = 0;
+
+    public function ajoutResultat(){
+        $this->nmbResulttat +=1;
     }
+
     public function savePartner()
     {
             $this->validate([
-                'entitled' =>  'required',
-                'year_of_execution' =>  'required',
-                'partner_id' =>  'required',
-                'uac_structure_id' =>  'required',
-                'uac_entitie_id' =>  'required',
-                'resultat' =>  'required',
 
                 'partenaire_id' =>  'required',
                 'type_id' =>  'required',
                 'object_partener_id' =>  'required',
                 'year_signature' =>  'required',
                 'year_collect' =>  'required',
-                'suggestions' =>  'required',
-                'difficults' =>  'required',
 
                 'email' =>  'required',
                 'phone' =>  'required',
-                'phone_whatsapp' =>  'required',
                 'identite' =>  'required',
                 'poste' =>  'required',
             ]);
 
-        $partner = new partner();
 
-        $partner->type_id = $this->type_id;
-        $partner->user_id = Auth::user()->id;
-        $partner->object_partener_id = $this->object_partener_id;
-        $partner->partenaire_id = $this->partenaire_id;
-        $partner->year_signature = $this->year_signature;
-        $partner->year_collect = $this->year_collect;
-        $partner->suggestions = $this->suggestions;
-        $partner->difficults = $this->difficults;
-        $partner->save();
+            $otherInfo = new otherInfo();
+            $otherInfo->email = $this->email;
+            $otherInfo->phone = $this->phone;
+            if($this->phone_whatsapp)
+            {
+                $otherInfo->phone_whatsapp = $this->phone_whatsapp;
 
-        $otherInfo = new otherInfo();
-        $id_partner = partner::latest()->first();
-        $otherInfo->partner_id = $id_partner->id;
-        $otherInfo->email = $this->email;
-        $otherInfo->phone = $this->phone;
-        $otherInfo->phone_whatsapp = $this->phone_whatsapp;
-        $otherInfo->identite = $this->identite;
-        $otherInfo->poste = $this->poste;
-        $otherInfo->save();
+            }else{
+                $otherInfo->phone_whatsapp = null;
+            }
+            $otherInfo->identite = $this->identite;
+            $otherInfo->poste = $this->poste;
+            $otherInfo->save();
 
-        $activitie = new activitie();
+            $activitie = new activitie();
+            // dd($this->resultat);
 
-        $activitie->partner_id = $id_partner->id;
-        $activitie->entitled = $this->entitled;
-        $activitie->year_of_execution = $this->year_of_execution;
-        $activitie->uac_structure_id = $this->uac_structure_id;
-        $activitie->uac_entitie_id = $this->uac_entitie_id;
-        $activitie->resultat = $this->resultat;
-        $activitie->save();
+            if($this->nmber == 0)
+            {
+                $activitie->entitled = null;
+                $activitie->year_of_execution = null;
+                $activitie->uac_structure_id = null;
+                $activitie->uac_entitie_id = null;
+                $activitie->resultat = null;
+                $activitie->save();
+            }else{
+                $activitie->entitled = $this->entitled;
+                $activitie->year_of_execution = $this->year_of_execution;
+                if($this->uac_structure_id)
+                {
+                    $activitie->uac_structure_id = implode(",",$this->uac_structure_id);
+                }else{
+                    $activitie->uac_structure_id = null;
+                }
+                if($this->uac_entitie_id)
+                {
+                    $activitie->uac_entitie_id = implode(",",$this->uac_entitie_id);
+                }else{
+                    $activitie->uac_entitie_id = null;
+                }
+                $activitie->uac_entitie_id = implode(",",$this->uac_entitie_id);
+                $activitie->resultat = $this->resultat;
+                $activitie->save();
+            }
 
-       session()->flash('message', 'Enregistrement effectué avec succès.');
-       $this->resetInputFields();
+
+
+
+            $partner = new partner();
+            $id_otherInfo = otherInfo::latest()->first();
+            $id_activitie = activitie::latest()->first();
+            // dd($id_otherInfo->id, $id_activitie->id);
+            $partner->other_info_id = $id_otherInfo->id;
+            $partner->activitie_id = $id_activitie->id;
+            $partner->type_id = $this->type_id;
+            $partner->user_id = Auth::user()->id;
+            $partner->object_partener_id = implode(",",$this->object_partener_id);
+            $partner->partenaire_id = $this->partenaire_id;
+            $partner->year_signature = $this->year_signature;
+            $partner->year_collect = $this->year_collect;
+            $partner->suggestions = $this->suggestions;
+            $partner->difficults = $this->difficults;
+            $partner->save();
+
+
+            session()->flash('message', 'Enregistrement effectué avec succès.');
+            $this->resetInputFields();
+            // return redirect()->route('creation.de.artenariat');
 
     }
-    public function changeSubcategory()
-    {
-        $this->scategorie_id = 0;
-    }
-
 
     public function render()
     {

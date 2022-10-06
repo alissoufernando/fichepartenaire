@@ -1,13 +1,13 @@
 
-@section('title', 'PARTENARIAT')
+@section('title', 'ROLES')
 @section('styles')
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/datatables.css')}}">
 @endsection
 
-@section('breadcrumb-title', 'PARTENARIAT')
+@section('breadcrumb-title', 'ROLES')
 @section('breadcrumb-items')
 <li class="breadcrumb-item">Tableau de bord</li>
-<li class="breadcrumb-item active">Liste de tous les partenariats</li>
+<li class="breadcrumb-item active">Liste des Rôles</li>
 @endsection
 <div>
     <!-- Container-fluid starts-->
@@ -17,11 +17,11 @@
             <div wire:ignore class="col-sm-12">
                 <div class="card rounded-0">
                     <div class="  card-header">
-                        {{-- @if (Session::has('message'))
+                        @if (Session::has('message'))
                         <div class="alert alert-success">{{Session::get('message')}}</div>
-                        @endif --}}
-                        <h5 class="d-inline">Liste de tous les partenariats</h5>
-                        {{-- <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn  btn-primary btn-sm float-end">Ajouter</a> --}}
+                    @endif
+                        <h5 class="d-inline">Liste des rôles</h5>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn  btn-primary btn-sm float-end">Ajouter</a>
 
                     </div>
 
@@ -31,10 +31,7 @@
                             <thead>
                                 <tr>
                                 <th>ID</th>
-                                <th>Partenaire</th>
-                                <th>Types</th>
-                                <th>Object</th>
-                                <th>Année de signature</th>
+                                <th>Name</th>
                                 <th>Actions</th>
                                 </tr>
                             </thead>
@@ -42,17 +39,14 @@
                                 @php
                                 $i=1
                                 @endphp
-                                @foreach ($partners as $partner)
+                                @foreach ($roles as $role)
                                 <tr>
                                     <td>{{$i ++}}</td>
-                                    <td>{{$partner->partenaire->name}}</td>
-                                    <td>{{$partner->type->name}}</td>
-                                    <td>{{$partner->object_partener_id}}</td>
-                                    <td>{{$partner->year_signature}}</td>
+                                    <td>{{$role->nom}}</td>
                                     <td>
-                                    <a href="{{route('partner.detail',['id' => $partner->id])}}"> <i class="fa fa-list fa-1x m-5 text-primary"></i> </a>
-                                    <a href="{{route('partner.edit',['id' => $partner->id])}}"> <i class="fa fa-edit fa-1x m-5 text-warning"></i> </a>
-                                    <a href="#" wire:click.prevent="deletePartner({{$partner->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
+
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" wire:click.prevent='getElementById({{ $role->id }})'>  <i class="fa fa-edit m-5 text-warning"></i> </a>
+                                    <a href="#" wire:click.prevent="deleteRole({{$role->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
                                     </td>
                                 </tr>
 
@@ -70,7 +64,7 @@
     </div>
 
     <!-- Container-fluid Ends-->
-    {{-- @include('livewire.dashboard.formation.modal') --}}
+    @include('livewire.dashboard.role.modal')
 </div>
 
 

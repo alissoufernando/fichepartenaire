@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\partner;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class activitie extends Model
 {
@@ -11,10 +12,14 @@ class activitie extends Model
     protected $fillable = [
         'entitled',
         'year_of_execution',
-        'partner_id',
         'uac_structure_id',
         'uac_entitie_id',
         'unite',
         'resultat'
     ];
+
+    public function partner()
+    {
+        return $this->belongsTo(partner::class);
+    }
 }

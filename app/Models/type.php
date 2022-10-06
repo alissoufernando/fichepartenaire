@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\partner;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class type extends Model
 {
@@ -12,4 +13,8 @@ class type extends Model
         'name',
 
     ];
+    public function partner()
+    {
+        return $this->belongsTo(partner::class);
+    }
 }

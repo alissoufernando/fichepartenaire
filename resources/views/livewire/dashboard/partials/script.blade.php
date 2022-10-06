@@ -26,3 +26,4 @@
 <script>
     var bs_rtl_js = "{{asset('assets/css/bootstrap.rtl.min.css')}}";
 </script>
+

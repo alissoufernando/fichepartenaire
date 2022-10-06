@@ -21,7 +21,7 @@
                         <div class="alert alert-success">{{Session::get('message')}}</div>
                         @endif --}}
                         <h5 class="d-inline">Liste de mes partenariats</h5>
-                        {{-- <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn  btn-primary btn-sm float-end">Ajouter</a> --}}
+                        <a href="{{ route('creation.de.artenariat') }}"  class="btn  btn-primary btn-sm float-end">Ajouter</a>
 
                     </div>
 
@@ -31,7 +31,7 @@
                             <thead>
                                 <tr>
                                 <th>ID</th>
-                                <th>Intitulé</th>
+                                <th>Partenaire</th>
                                 <th>Types</th>
                                 <th>Object</th>
                                 <th>Année de signature</th>
@@ -42,30 +42,21 @@
                                 @php
                                 $i=1
                                 @endphp
-                                {{-- @foreach ($formations as $formation)
+                                @foreach ($partners as $partner)
                                 <tr>
                                     <td>{{$i ++}}</td>
-                                    <td>{{$formation->name}}</td>
+                                    <td>{{$partner->partenaire->name}}</td>
+                                    <td>{{$partner->type->name}}</td>
+                                    <td>{{$partner->object_partener_id}}</td>
+                                    <td>{{$partner->year_signature}}</td>
                                     <td>
-
-                                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" wire:click.prevent='getElementById({{ $formation->id }})'>  <i class="fa fa-edit m-5 text-warning"></i> </a>
-                                    <a href="#" wire:click.prevent="deleteObjet({{$formation->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
+                                    <a href="{{route('partner.detail',['id' => $partner->id])}}"> <i class="fa fa-list fa-1x m-5 text-primary"></i> </a>
+                                    <a href="{{route('partner.edit',['id' => $partner->id])}}"> <i class="fa fa-edit fa-1x m-5 text-warning"></i> </a>
+                                    <a href="#" wire:click.prevent="deletePartner({{$partner->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
                                     </td>
                                 </tr>
 
-                                @endforeach --}}
-                                <tr>
-                                    <td>1</td>
-                                    <td>bhvgyh</td>
-                                    <td>bhvgyh</td>
-                                    <td>bhvgyh</td>
-                                    <td>bhvgyh</td>
-                                    <td>
-
-                                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" wire:click.prevent=''>  <i class="fa fa-edit m-5 text-warning"></i> </a>
-                                    <a href="#" wire:click.prevent=""> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
-                                    </td>
-                                </tr>
+                                @endforeach
 
                             </tbody>
                             </table>

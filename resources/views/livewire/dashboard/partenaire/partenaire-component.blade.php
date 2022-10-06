@@ -46,7 +46,7 @@
                                     <td>
 
                                     <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" wire:click.prevent='getElementById({{ $partenaire->id }})'>  <i class="fa fa-edit m-5 text-warning"></i> </a>
-                                    <a href="#" wire:click.prevent="deleteObjet({{$partenaire->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
+                                    <a href="#" wire:click.prevent="deletePartenaire({{$partenaire->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
                                     </td>
                                 </tr>
 
@@ -64,7 +64,7 @@
     </div>
 
     <!-- Container-fluid Ends-->
-    @include('livewire.dashboard.formation.modal')
+    @include('livewire.dashboard.partenaire.modal')
 </div>
 
 

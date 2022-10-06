@@ -28,11 +28,11 @@ class TypePatenariatComponent extends Component
     {
         if ($this->type_id) {
             $this->validateOnly($fields, [
-                'name' =>  ['required','unique:coupons']
+                'name' =>  ['required']
             ]);
         } else {
             $this->validateOnly($fields, [
-                'name' =>  ['required','unique:coupons']
+                'name' =>  ['required']
 
         ]);
     }
@@ -42,11 +42,11 @@ class TypePatenariatComponent extends Component
     {
         if ($this->type_id) {
             $this->validate([
-                'name' =>  ['required','unique:coupons']
+                'name' =>  ['required']
             ]);
         } else {
             $this->validate([
-                'name' =>  ['required','unique:coupons']
+                'name' =>  ['required']
             ]);
         }
         $myType = new type();

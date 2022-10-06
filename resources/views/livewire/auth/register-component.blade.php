@@ -10,6 +10,7 @@
               <h4 class="text-center">NEW USER</h4>
               <h6 class="text-center">Enter your Username and Password For Signup</h6>
               <form class="theme-form" method="post" action="{{route('register')}}">
+                @csrf
                 <div class="form-row">
                   <div class="col-md-6">
                     <div class="form-group">

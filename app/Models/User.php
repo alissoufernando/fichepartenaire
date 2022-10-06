@@ -92,6 +92,16 @@ class User extends Authenticatable
     {
         return $this->roles()->where('nom', "Super Administrateur")->first();
     }
+
+    public function isSuser()
+    {
+        return $this->roles()->where('nom', "utilisateur")->first();
+    }
+    
+    public function hasAnyRole(array $roles)
+    {
+        return $this->roles()->whereIn('nom', $roles)->first();
+    }
     // public function hasAnyRole(array $roles)
     // {
     //     return $this->roles()->whereIn('nom', $roles)->first();

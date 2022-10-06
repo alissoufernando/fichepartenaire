@@ -15,13 +15,12 @@ class CreateActivitiesTable extends Migration
     {
         Schema::create('activities', function (Blueprint $table) {
             $table->id();
-            $table->string('entitled');
-            $table->string('year_of_execution');
-            $table->foreignId('partner_id')->constrained('partners')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('uac_structure_id')->constrained('uac_structures')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('uac_entitie_id')->constrained('uac_entities')->onUpdate('cascade')->onDelete('cascade');
+            $table->string('entitled')->nullable();
+            $table->string('year_of_execution')->nullable();
+            $table->string('uac_structure_id')->nullable();
+            $table->string('uac_entitie_id')->nullable();
             $table->string('unite')->nullable();
-            $table->string('resultat');
+            $table->string('resultat')->nullable();
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/feather-icon.css')}}">
 @yield('styles')
 <!-- Bootstrap css-->
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.css')}}" defer>
+<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.css')}}">
 <link id="bootstrap-file" rel="stylesheet" type="text/css" href="#" >
 <!-- App css-->
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
