@@ -20,7 +20,7 @@
                 </div>
                 <div class="modal-footer justify-content-center" >
 
-                    <button wire:click.prevent='savePartner' class="btn btn-primary btn-sm" type="button" data-bs-dismiss="modal">
+                    <button wire:click.prevent='savePartner' class="btn btn-success btn-sm" type="button" data-bs-dismiss="modal">
                         Oui
                     </button>
                   <a class="btn btn-danger float-end" type="button" data-bs-dismiss="modal">Non</a>

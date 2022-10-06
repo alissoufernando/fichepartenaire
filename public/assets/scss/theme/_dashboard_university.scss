@@ -9,7 +9,7 @@
 .feather-main{
   .feather-icon-block {
     width: 53px;
-    background-color: $primary-color;
+    background-color: $success-color;
     height: 53px;
     margin-right: 30px;
     border-radius: 50%;
@@ -127,7 +127,7 @@
 }
 .ranker{
   h6{
-    color: $primary-color;
+    color: $success-color;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 10px;
@@ -147,7 +147,7 @@
         width: 19px;
         height: 19px;
         border-radius: 50%;
-        background-color: $primary-color;
+        background-color: $success-color;
         border: 5px solid #f6f8fe;
       }
       h6{
@@ -246,7 +246,7 @@
               }
               input[type="checkbox"]:checked + label::before {
                 font-size: 10px;
-                background-color: $primary-color;
+                background-color: $success-color;
                 color: $white;
               }
             }
@@ -254,7 +254,7 @@
               position: relative;
               width: 10px;
               height: 10px;
-              background-color: $primary-color;
+              background-color: $success-color;
               border-radius: 50%;
               border: 2px solid #fff;
               top: -13px;
@@ -283,7 +283,7 @@
   }
 }
 .card-gradient{
-  background-image: $gradient-primary;
+  background-image: $gradient-success;
   &:hover{
     background-size: 100% 100%;
   }
@@ -426,7 +426,7 @@
       }
       .ct-series-a {
         .ct-point, .ct-line, .ct-bar, .ct-slice-donut {
-          stroke: $primary-color;
+          stroke: $success-color;
         }
       }
     }
@@ -504,7 +504,7 @@
       .ct-line,
       .ct-bar,
       .ct-slice-donut {
-        stroke: $primary-color;
+        stroke: $success-color;
       }
     }
     .ct-series-a{
@@ -512,7 +512,7 @@
       .ct-line,
       .ct-bar,
       .ct-slice-donut {
-        stroke: rgba($primary-color, 0.13);
+        stroke: rgba($success-color, 0.13);
       }
     }
   }
@@ -529,7 +529,7 @@
     svg {
       .ct-series-a {
         .ct-point, .ct-line, .ct-bar, .ct-slice-donut {
-          stroke: $primary-color;
+          stroke: $success-color;
         }
       }
     }

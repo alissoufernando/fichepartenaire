@@ -4,26 +4,26 @@
 .br-theme-bars-1to10, .br-theme-bars-movie, .br-theme-bars-pill, .br-theme-bars-reversed, .br-theme-bars-horizontal {
   .br-widget {
     a{
-      background-color: rgba($primary-color, 0.4);
-      color: $primary-color;
+      background-color: rgba($success-color, 0.4);
+      color: $success-color;
       &.br-active,
       &.br-selected {
-        background-color: $primary-color;
+        background-color: $success-color;
       }
     }
     .br-current-rating {
-      color: $primary-color;
+      color: $success-color;
     }
   }
 }
 .br-theme-bars-square {
   .br-widget {
     a{
-      border: 2px solid rgba($primary-color, 0.5);
-      color: rgba($primary-color, 0.5);
+      border: 2px solid rgba($success-color, 0.5);
+      color: rgba($success-color, 0.5);
       &.br-active, &.br-selected {
-        border: 2px solid $primary-color;
-        color: $primary-color;
+        border: 2px solid $success-color;
+        color: $success-color;
       }
     }
   }
@@ -35,7 +35,7 @@
       &.br-active,
       &.br-fractional {
         &:after {
-          color: $primary-color;
+          color: $success-color;
         }
       }
     }

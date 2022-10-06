@@ -269,7 +269,7 @@ $(function () {
         '<textarea class="form-control add-new-item" rows="2" placeholder="Add Content" required></textarea>' +
         '</div>' +
         '<div class="mb-2">' +
-        '<button type="submit" class="btn btn-primary btn-sm me-1">Add</button>' +
+        '<button type="submit" class="btn btn-success btn-sm me-1">Add</button>' +
         '<button type="button" class="btn btn-outline-secondary btn-sm cancel-add-item">Cancel</button>' +
         '</div>';
       kanban.addForm(boardId, addNew);

@@ -58,7 +58,7 @@ $(function () {
   if (sectionBlockOverlay.length && section.length) {
     sectionBlockOverlay.on('click', function () {
       section.block({
-        message: '<div class="spinner-border text-primary" role="status"></div>',
+        message: '<div class="spinner-border text-success" role="status"></div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',
@@ -179,7 +179,7 @@ $(function () {
   if (cardBlockOverlay.length && cardSection.length) {
     cardBlockOverlay.on('click', function () {
       cardSection.block({
-        message: '<div class="spinner-border text-primary" role="status"></div>',
+        message: '<div class="spinner-border text-success" role="status"></div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',
@@ -301,7 +301,7 @@ $(function () {
   if (pageBlockOverlay.length) {
     pageBlockOverlay.on('click', function () {
       $.blockUI({
-        message: '<div class="spinner-border text-primary" role="status"></div>',
+        message: '<div class="spinner-border text-success" role="status"></div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',
@@ -423,7 +423,7 @@ $(function () {
   if (formBlockOverlay.length && formSection.length) {
     formBlockOverlay.on('click', function () {
       formSection.block({
-        message: '<div class="spinner-border text-primary" role="status"></div>',
+        message: '<div class="spinner-border text-success" role="status"></div>',
         timeout: 1000,
         css: {
           backgroundColor: 'transparent',

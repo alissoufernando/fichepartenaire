@@ -570,10 +570,10 @@ $(document).ready(function() {
     });
     //datatable post start here
     var table = $('#dt-plugin-method').DataTable();
-    $('<button class="btn btn-primary  m-b-20">sum of age in all rows</button>').prependTo('.dt-plugin-buttons').on('click', function() {
+    $('<button class="btn btn-success  m-b-20">sum of age in all rows</button>').prependTo('.dt-plugin-buttons').on('click', function() {
         alert('Column sum is: ' + table.column(3).data().sum());
     });
-    $('<button class="btn btn-primary m-r-10 m-b-20">sum of  age of visible rows</button>').prependTo('.dt-plugin-buttons').on('click', function() {
+    $('<button class="btn btn-success m-r-10 m-b-20">sum of  age of visible rows</button>').prependTo('.dt-plugin-buttons').on('click', function() {
         alert('Column sum is: ' + table.column(3, {
             page: 'current'
         }).data().sum());

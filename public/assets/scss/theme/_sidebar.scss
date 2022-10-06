@@ -571,11 +571,11 @@
               a{
                 svg{
                   rect,line,path,circle,polygon,polyline{
-                    color: $primary-color;
+                    color: $success-color;
                   }
                 }
                 i,span{
-                  color: $primary-color;
+                  color: $success-color;
                   transition: $sidebar-transition;
                 }
               }
@@ -584,7 +584,7 @@
               &:hover{
                 padding-left: 0;
                 i,span{
-                  color: $primary-color;
+                  color: $success-color;
                   transition: $sidebar-transition;
                 }
               }

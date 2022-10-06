@@ -12,8 +12,8 @@ $(function () {
 
   var startBtn = $('#tour');
   function setupTour(tour) {
-    var backBtnClass = 'btn btn-sm btn-outline-primary',
-      nextBtnClass = 'btn btn-sm btn-primary btn-next';
+    var backBtnClass = 'btn btn-sm btn-outline-success',
+      nextBtnClass = 'btn btn-sm btn-success btn-next';
     tour.addStep({
       title: 'Navbar',
       text: 'This is your navbar',

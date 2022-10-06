@@ -90,8 +90,8 @@ var linecharts = {
     labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
     datasets: [{
         fillColor: "transparent",
-        strokeColor: endlessAdminConfig.primary,
-        pointColor: endlessAdminConfig.primary,
+        strokeColor: endlessAdminConfig.success,
+        pointColor: endlessAdminConfig.success,
         data: [1, 2.5, 1.5, 3, 1.3, 2, 4, 4.5]
     },{
         fillColor: "transparent",
@@ -127,9 +127,9 @@ var morris_chart = {
                         value: 10,
                         label: "Invest"
                     }],
-                backgroundColor: endlessAdminConfig.primary,
+                backgroundColor: endlessAdminConfig.success,
                 labelColor: "#999999",
-                colors: [endlessAdminConfig.primary ,"#f6f6f6" ,endlessAdminConfig.secondary],
+                colors: [endlessAdminConfig.success ,"#f6f6f6" ,endlessAdminConfig.secondary],
                 formatter: function(a) {
                     return a + "%"
                 }

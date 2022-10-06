@@ -26,11 +26,11 @@
                 </div>
                 <div class="modal-footer justify-content-start" >
                     @if ($role_id)
-                    <button type="submit" class="btn btn-primary btn-sm">
+                    <button type="submit" class="btn btn-success btn-sm">
                         Modifier
                     </button>
                     @else
-                    <button type="submit" class="btn btn-primary btn-sm">
+                    <button type="submit" class="btn btn-success btn-sm">
                         Ajouter
                     </button>
                     @endif

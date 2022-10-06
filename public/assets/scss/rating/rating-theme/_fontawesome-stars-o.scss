@@ -22,17 +22,17 @@
 
     a.br-active:after {
       content: '\f005';
-      color: $primary-color;
+      color: $success-color;
     }
 
     a.br-selected:after {
       content: '\f005';
-      color: $primary-color;
+      color: $success-color;
     }
 
     a.br-fractional:after {
       content: '\f123';
-      color: $primary-color;
+      color: $success-color;
     }
 
     .br-current-rating {

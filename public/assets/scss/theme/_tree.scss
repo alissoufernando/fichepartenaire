@@ -3,7 +3,7 @@
 ==========================**/
 .jstree-default{
 	.jstree-clicked{
-		background-color: lighten($primary-color , 40%);
+		background-color: lighten($success-color , 40%);
 		box-shadow: none;
 		color: $dark-color;
 	}
@@ -14,7 +14,7 @@
 			position: absolute;
 			height: 10px;
 			width: 10px;
-			background-color: $primary-color;
+			background-color: $success-color;
 			top: 7px;
 			left: 7px;
 		}
@@ -30,7 +30,7 @@
 				 display: none;
 			 }
 			 &:hover{
-				 background-color: lighten($primary-color , 45%);
+				 background-color: lighten($success-color , 45%);
 				 box-shadow: None;
 			 }
 		}

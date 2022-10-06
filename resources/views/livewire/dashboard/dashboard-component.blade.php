@@ -24,7 +24,7 @@
               <h5 class="mb-0">85GB / <span>100Gb</span></h5>
             </div>
             <div class="progress">
-              <div class="progress-bar-animated bg-primary progress-bar-striped" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar-animated bg-success progress-bar-striped" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
               <h5 class="mb-0">75GB / <span>100Gb</span></h5>
             </div>
             <div class="progress">
-              <div class="progress-bar-animated bg-primary progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar-animated bg-success progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>

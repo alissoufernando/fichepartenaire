@@ -11,7 +11,7 @@
                 var $target = $($(this).attr('href')),
                     $item = $(this);
                 if (!$item.hasClass('disabled')) {
-                    navListItems.removeClass('btn btn-light').addClass('btn btn-primary');
+                    navListItems.removeClass('btn btn-light').addClass('btn btn-success');
                     $item.addClass('btn btn-light');
                     allWells.hide();
                     $target.show();
@@ -32,7 +32,7 @@
                 }
                 if (isValid)
                     nextStepWizard.removeAttr('disabled').trigger('click');
-            }), $('div.setup-panel div a.btn-primary').trigger('click');
+            }), $('div.setup-panel div a.btn-success').trigger('click');
         }
     };
     (function($) {

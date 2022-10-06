@@ -11,11 +11,11 @@
   }
 }
 
-// primary Color
+// success Color
 $m-val:13;
-$or: $primary-color;
+$or: $success-color;
 @while $m-val >=1 {
-  .primary-color ul li {
+  .success-color ul li {
     &:nth-child(#{$m-val}) {
       $or: lighten($or, 1.5%);
       background-color: $or;
@@ -34,7 +34,7 @@ $or: $primary-color;
     }
   }
 }
-//primary Color
+//success Color
 
 // secondary Color
 $m-val:13;

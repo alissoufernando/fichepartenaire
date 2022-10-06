@@ -63,7 +63,7 @@ var options = {
   GetData();
 
   dataset = [
-    { label: "CPU", data: data, color: endlessAdminConfig.primary }
+    { label: "CPU", data: data, color: endlessAdminConfig.success }
   ];
 
   $.plot($("#cpu-updating"), dataset, options);
@@ -83,8 +83,8 @@ var lineGraphData = {
   datasets: [{
     label: "My First dataset",
     fillColor: "transparent",
-    strokeColor: endlessAdminConfig.primary,
-    pointColor: endlessAdminConfig.primary,
+    strokeColor: endlessAdminConfig.success,
+    pointColor: endlessAdminConfig.success,
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "#000",
@@ -171,7 +171,7 @@ $(function () {
       color: "#000",
       fillColor: { colors: [{ opacity: 0.5 }, { opacity: 0 } ] }
     },
-    color: endlessAdminConfig.primary,
+    color: endlessAdminConfig.success,
   }];
   //
   var MyOptions = {

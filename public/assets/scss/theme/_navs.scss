@@ -22,9 +22,9 @@
 				}
 			}
 			&:hover{
-				color: $primary-color;
+				color: $success-color;
 				a{
-					color: $primary-color;
+					color: $success-color;
 				}
 			}
 		}
@@ -65,9 +65,9 @@
 						padding-top: 9px;
 					}
 					&:hover{
-						color: $primary-color;
+						color: $success-color;
 						a{
-							color: $primary-color;
+							color: $success-color;
 						}
 					}
 				}
@@ -75,10 +75,10 @@
 			a {
 				color: $theme-body-font-color;
 				&:hover{
-					color: $primary-color;
+					color: $success-color;
 				}
 				&.active{
-					color: $primary-color;
+					color: $success-color;
 				}
 				span{
 					font-family: $font-work-sans, $font-serif;
@@ -128,7 +128,7 @@
 			position: relative;
 			&:hover
 			{
-				color: $primary-color!important;
+				color: $success-color!important;
 			}
 		}
 		button[aria-expanded="true"]{
@@ -162,7 +162,7 @@
 					&.active{
 						svg{
 							path, line, polyline{
-								color: $primary-color !important;
+								color: $success-color !important;
 							}
 						}
 					}

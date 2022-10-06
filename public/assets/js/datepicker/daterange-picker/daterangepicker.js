@@ -55,7 +55,7 @@
             this.drops = 'up';
 
         this.buttonClasses = 'btn btn-sm';
-        this.applyClass = 'btn-primary';
+        this.applyClass = 'btn-success';
         this.cancelClass = 'btn-light';
 
         this.locale = {

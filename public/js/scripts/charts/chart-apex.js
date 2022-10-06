@@ -245,7 +245,7 @@ $(function () {
         position: 'top',
         horizontalAlign: 'start'
       },
-      colors: [window.colors.solid.warning, window.colors.solid.primary, window.colors.solid.success],
+      colors: [window.colors.solid.warning, window.colors.solid.success, window.colors.solid.success],
       series: [
         {
           name: 'Angular',

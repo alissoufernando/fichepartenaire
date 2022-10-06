@@ -19,7 +19,7 @@
         showCancelButton: true,
         confirmButtonText: 'Yes, Suspend user!',
         customClass: {
-          confirmButton: 'btn btn-primary',
+          confirmButton: 'btn btn-success',
           cancelButton: 'btn btn-outline-danger ms-1'
         },
         buttonsStyling: false
@@ -61,7 +61,7 @@
           showCancelButton: true,
           confirmButtonText: 'Yes',
           customClass: {
-            confirmButton: 'btn btn-primary',
+            confirmButton: 'btn btn-success',
             cancelButton: 'btn btn-outline-danger ms-1'
           },
           buttonsStyling: false

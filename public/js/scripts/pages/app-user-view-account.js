@@ -65,7 +65,7 @@ $(function () {
             } else {
               // For Avatar badge
               var stateNum = Math.floor(Math.random() * 6) + 1;
-              var states = ['success', 'danger', 'warning', 'info', 'dark', 'primary', 'secondary'];
+              var states = ['success', 'danger', 'warning', 'info', 'dark', 'success', 'secondary'];
               var $state = states[stateNum],
                 $name = full['full_name'],
                 $initials = $name.match(/\b\w/g) || [];
@@ -220,7 +220,7 @@ $(function () {
               roleObj = {
                 Sent: { class: 'bg-light-secondary', icon: 'send' },
                 Paid: { class: 'bg-light-success', icon: 'check-circle' },
-                Draft: { class: 'bg-light-primary', icon: 'save' },
+                Draft: { class: 'bg-light-success', icon: 'save' },
                 Downloaded: { class: 'bg-light-info', icon: 'arrow-down-circle' },
                 'Past Due': { class: 'bg-light-danger', icon: 'info' },
                 'Partial Payment': { class: 'bg-light-warning', icon: 'pie-chart' }

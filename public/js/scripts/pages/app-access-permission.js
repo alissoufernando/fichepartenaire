@@ -59,7 +59,7 @@ $(function () {
               Admin:
                 '<a href="' +
                 userList +
-                '" class="me-50"><span class="badge rounded-pill badge-light-primary">Administrator</span></a>',
+                '" class="me-50"><span class="badge rounded-pill badge-light-success">Administrator</span></a>',
               Manager:
                 '<a href="' +
                 userList +
@@ -120,7 +120,7 @@ $(function () {
       buttons: [
         {
           text: 'Add Permission',
-          className: 'add-new btn btn-primary mt-50',
+          className: 'add-new btn btn-success mt-50',
           attr: {
             'data-bs-toggle': 'modal',
             'data-bs-target': '#addPermissionModal'

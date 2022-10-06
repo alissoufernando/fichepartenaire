@@ -70,7 +70,7 @@ $(function () {
               roleObj = {
                 Sent: { class: 'bg-light-secondary', icon: 'send' },
                 Paid: { class: 'bg-light-success', icon: 'check-circle' },
-                Draft: { class: 'bg-light-primary', icon: 'save' },
+                Draft: { class: 'bg-light-success', icon: 'save' },
                 Downloaded: { class: 'bg-light-info', icon: 'arrow-down-circle' },
                 'Past Due': { class: 'bg-light-danger', icon: 'info' },
                 'Partial Payment': { class: 'bg-light-warning', icon: 'pie-chart' }
@@ -104,7 +104,7 @@ $(function () {
               $email = full['email'],
               $image = full['avatar'],
               stateNum = Math.floor(Math.random() * 6),
-              states = ['success', 'danger', 'warning', 'info', 'primary', 'secondary'],
+              states = ['success', 'danger', 'warning', 'info', 'success', 'secondary'],
               $state = states[stateNum],
               $name = full['client_name'],
               $initials = $name.match(/\b\w/g) || [];
@@ -251,7 +251,7 @@ $(function () {
       buttons: [
         {
           text: 'Add Record',
-          className: 'btn btn-primary btn-add-record ms-2',
+          className: 'btn btn-success btn-add-record ms-2',
           action: function (e, dt, button, config) {
             window.location = invoiceAdd;
           }

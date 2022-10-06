@@ -34,7 +34,7 @@ lineArea.on('created', function (data) {
         y2: 1
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -83,7 +83,7 @@ lineArea1.on('created', function (data) {
         y2: 0
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -130,7 +130,7 @@ lineArea2.on('created', function (data) {
         y2: 0
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -177,7 +177,7 @@ lineArea3.on('created', function (data) {
         y2: 0
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary

@@ -68,7 +68,7 @@ $(window).on('load', function () {
         }
       }
     },
-    colors: [window.colors.solid.primary],
+    colors: [window.colors.solid.success],
     dataLabels: {
       enabled: false
     },
@@ -198,7 +198,7 @@ $(window).on('load', function () {
     colors: [
       $avgSessionStrokeColor2,
       $avgSessionStrokeColor2,
-      window.colors.solid.primary,
+      window.colors.solid.success,
       $avgSessionStrokeColor2,
       $avgSessionStrokeColor2,
       $avgSessionStrokeColor2
@@ -274,7 +274,7 @@ $(window).on('load', function () {
         shade: 'dark',
         type: 'horizontal',
         shadeIntensity: 0.5,
-        gradientToColors: [window.colors.solid.primary],
+        gradientToColors: [window.colors.solid.success],
         inverseColors: true,
         opacityFrom: 1,
         opacityTo: 1,
@@ -321,7 +321,7 @@ $(window).on('load', function () {
     stroke: {
       width: 0
     },
-    colors: [window.colors.solid.primary, window.colors.solid.info],
+    colors: [window.colors.solid.success, window.colors.solid.info],
     plotOptions: {
       radar: {
         polygons: {
@@ -334,7 +334,7 @@ $(window).on('load', function () {
       type: 'gradient',
       gradient: {
         shade: 'dark',
-        gradientToColors: [window.colors.solid.primary, window.colors.solid.info],
+        gradientToColors: [window.colors.solid.success, window.colors.solid.info],
         shadeIntensity: 1,
         type: 'horizontal',
         opacityFrom: 1,

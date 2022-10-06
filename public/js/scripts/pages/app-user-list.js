@@ -81,7 +81,7 @@ $(function () {
             } else {
               // For Avatar badge
               var stateNum = Math.floor(Math.random() * 6) + 1;
-              var states = ['success', 'danger', 'warning', 'info', 'dark', 'primary', 'secondary'];
+              var states = ['success', 'danger', 'warning', 'info', 'dark', 'success', 'secondary'];
               var $state = states[stateNum],
                 $name = full['full_name'],
                 $initials = $name.match(/\b\w/g) || [];
@@ -119,7 +119,7 @@ $(function () {
           render: function (data, type, full, meta) {
             var $role = full['role'];
             var roleBadgeObj = {
-              Subscriber: feather.icons['user'].toSvg({ class: 'font-medium-3 text-primary me-50' }),
+              Subscriber: feather.icons['user'].toSvg({ class: 'font-medium-3 text-success me-50' }),
               Author: feather.icons['settings'].toSvg({ class: 'font-medium-3 text-warning me-50' }),
               Maintainer: feather.icons['database'].toSvg({ class: 'font-medium-3 text-success me-50' }),
               Editor: feather.icons['edit-2'].toSvg({ class: 'font-medium-3 text-info me-50' }),
@@ -240,7 +240,7 @@ $(function () {
         },
         {
           text: 'Add New User',
-          className: 'add-new btn btn-primary',
+          className: 'add-new btn btn-success',
           attr: {
             'data-bs-toggle': 'modal',
             'data-bs-target': '#modals-slide-in'

@@ -243,7 +243,7 @@ $(function () {
         // Badge calculation loop
         var selected = $('.task-tag').val();
         var badgeColor = {
-          Team: 'primary',
+          Team: 'success',
           Low: 'success',
           Medium: 'warning',
           High: 'danger',

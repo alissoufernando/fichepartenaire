@@ -27,10 +27,10 @@
         font-size: 20px;
         vertical-align: -5px;
         .icon-trash        {
-            color: $primary-color;
+            color: $success-color;
         }
         .icon-check{
-          color: $primary-color;
+          color: $success-color;
         }
       }
     }
@@ -95,13 +95,13 @@
           display: none;
         }
         &:hover {
-          background: $primary-color;
+          background: $success-color;
           .icon {
             color: $light-color;
           }
         }
         .icon {
-          color: $primary-color;
+          color: $success-color;
           font-size: 20px;
         }
       }
@@ -224,7 +224,7 @@
           }
           .task-label {
             text-decoration: line-through;
-            color: $primary-color;
+            color: $success-color;
           }
         }
         &.new .task-container {

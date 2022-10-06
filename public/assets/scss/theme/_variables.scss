@@ -1,10 +1,10 @@
 // General variables
 $theme-font-color: #1b252a;
-$theme-body-font-color: #313131;
+$theme-body-font-color: #232526;
 $theme-body-sub-title-color: #777777;
 
 // Theme colors variables
-$primary-color: #4466f2;
+$success-color: #2a8c28;
 $secondary-color: #1ea6ec ;
 $success-color: #22af47 ;
 $info-color   : #007bff  ;
@@ -22,7 +22,7 @@ $auth-bg-color:#fafafa;
 $light : #f6f6f6;
 $light-text: #999;
 
-$dark-primary: #448aff;
+$dark-success: #448aff;
 $pitch-color: #fe8a7d;
 $flower-pink: #fb6d9d;
 $dark-sky: #536dfe;
@@ -36,7 +36,7 @@ $btn-search-bg-c:#ffd042;
 // error page color end
 
 // gradient colors
-$gradient-primary: linear-gradient($secondary-color, $primary-color);
+$gradient-success: linear-gradient($secondary-color, $success-color);
 
 //social colors
 $fb: #50598e;
@@ -73,15 +73,15 @@ $body-font-size: 14px;
 $body-font-color: $theme-body-font-color;
 $ul-padding-left: 0px;
 $ul-padding-right: 0px;
-$ancher-color: $primary-color;
+$ancher-color: $success-color;
 $btn-focus-box-shadow: none;
-$all-focus-outline-color: $primary-color;
+$all-focus-outline-color: $success-color;
 
 $paragraph-font-size : 13px;
 $paragraph-line-height : 1.7;
 $paragraph-letter-spacing : 0.7px;
 
-$code-tag-color: $primary-color;
+$code-tag-color: $success-color;
 $code-tag-bg-color: $light-color;
 $code-tag-padding: 3px;
 $code-tag-margin: 0 3px;
@@ -93,11 +93,11 @@ $blockquote-border : 4px solid $light-gray;
 $small-tag-padding: 10px;
 $small-tag-color: $dark-color;
 
-$pre-tag-bg-color: rgba($primary-color, 0.05);
+$pre-tag-bg-color: rgba($success-color, 0.05);
 $pre-tag-padding: 20px 0;
 
-$list-group-active-bg-color: $primary-color;
-$list-group-active-border-color: $primary-color;
+$list-group-active-bg-color: $success-color;
+$list-group-active-border-color: $success-color;
 $list-group-img-size: 40px;
 $list-group-margin: 10px;
 
@@ -170,7 +170,7 @@ $card-margin-bottom  :30px;
 $card-border-width   :0px;
 $card-border-color   :$light-color;
 $card-border-radious :8px;
-$card-box-shadow     :1px 5px 24px 0 rgba($primary-color, 0.05);
+$card-box-shadow     :1px 5px 24px 0 rgba($success-color, 0.05);
 $card-header-font-weight : 600;
 $card-header-bg-color : $white;
 $card-header-font-size : 18px;
@@ -199,7 +199,7 @@ $form-input-border-color : $light-semi-gray;
 $form-input-bg-color : $white;
 
 //Tour settings
-$tour-color: $primary-color;
+$tour-color: $success-color;
 
 //sidabr main settings
 $sidebar-width: 255px;
@@ -282,9 +282,9 @@ $main-header-left-bg-color : $transparent-color;
 $main-header-padding : 12px;
 $main-header-z-index : 15;
 $main-header-right-padding: 0 40px;
-$main-header-right-toggle-color : $primary-color;
+$main-header-right-toggle-color : $success-color;
 $main-header-right-nav-right :  0px;
 $main-header-right-nav-icon-size :  18px;
-$main-header-right-nav-icon-color :  $primary-color;
+$main-header-right-nav-icon-color :  $success-color;
 $main-header-right-nav-icon-margin-top :  10px;
 

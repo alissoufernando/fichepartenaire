@@ -390,7 +390,7 @@
           $('.modern-nav-toggle')
             .find('.collapse-toggle-icon')
             .replaceWith(
-              feather.icons['disc'].toSvg({ class: 'd-none d-xl-block collapse-toggle-icon primary font-medium-4' })
+              feather.icons['disc'].toSvg({ class: 'd-none d-xl-block collapse-toggle-icon success font-medium-4' })
             );
         }
         this.transit(
@@ -434,7 +434,7 @@
             .find('.collapse-toggle-icon')
             .replaceWith(
               feather.icons['circle'].toSvg({
-                class: 'd-none d-xl-block collapse-toggle-icon primary font-medium-4'
+                class: 'd-none d-xl-block collapse-toggle-icon success font-medium-4'
               })
             );
         }

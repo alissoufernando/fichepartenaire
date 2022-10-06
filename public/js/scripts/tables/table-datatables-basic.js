@@ -79,7 +79,7 @@ $(function () {
             } else {
               // For Avatar badge
               var stateNum = full['status'];
-              var states = ['success', 'danger', 'warning', 'info', 'dark', 'primary', 'secondary'];
+              var states = ['success', 'danger', 'warning', 'info', 'dark', 'success', 'secondary'];
               var $state = states[stateNum],
                 $name = full['full_name'],
                 $initials = $name.match(/\b\w/g) || [];
@@ -118,7 +118,7 @@ $(function () {
           render: function (data, type, full, meta) {
             var $status_number = full['status'];
             var $status = {
-              1: { title: 'Current', class: 'badge-light-primary' },
+              1: { title: 'Current', class: 'badge-light-success' },
               2: { title: 'Professional', class: ' badge-light-success' },
               3: { title: 'Rejected', class: ' badge-light-danger' },
               4: { title: 'Resigned', class: ' badge-light-warning' },
@@ -144,7 +144,7 @@ $(function () {
           render: function (data, type, full, meta) {
             return (
               '<div class="d-inline-flex">' +
-              '<a class="pe-1 dropdown-toggle hide-arrow text-primary" data-bs-toggle="dropdown">' +
+              '<a class="pe-1 dropdown-toggle hide-arrow text-success" data-bs-toggle="dropdown">' +
               feather.icons['more-vertical'].toSvg({ class: 'font-small-4' }) +
               '</a>' +
               '<div class="dropdown-menu dropdown-menu-end">' +
@@ -217,7 +217,7 @@ $(function () {
         },
         {
           text: feather.icons['plus'].toSvg({ class: 'me-50 font-small-4' }) + 'Add New Record',
-          className: 'create-new btn btn-primary',
+          className: 'create-new btn btn-success',
           attr: {
             'data-bs-toggle': 'modal',
             'data-bs-target': '#modals-slide-in'
@@ -333,7 +333,7 @@ $(function () {
           render: function (data, type, full, meta) {
             var $status_number = full['status'];
             var $status = {
-              1: { title: 'Current', class: 'badge-light-primary' },
+              1: { title: 'Current', class: 'badge-light-success' },
               2: { title: 'Professional', class: ' badge-light-success' },
               3: { title: 'Rejected', class: ' badge-light-danger' },
               4: { title: 'Resigned', class: ' badge-light-warning' },
@@ -359,7 +359,7 @@ $(function () {
           render: function (data, type, full, meta) {
             return (
               '<div class="d-inline-flex">' +
-              '<a class="pe-1 dropdown-toggle hide-arrow text-primary" data-bs-toggle="dropdown">' +
+              '<a class="pe-1 dropdown-toggle hide-arrow text-success" data-bs-toggle="dropdown">' +
               feather.icons['more-vertical'].toSvg({ class: 'font-small-4' }) +
               '</a>' +
               '<div class="dropdown-menu dropdown-menu-end">' +
@@ -426,7 +426,7 @@ $(function () {
           render: function (data, type, full, meta) {
             var $status_number = full['status'];
             var $status = {
-              1: { title: 'Current', class: 'badge-light-primary' },
+              1: { title: 'Current', class: 'badge-light-success' },
               2: { title: 'Professional', class: ' badge-light-success' },
               3: { title: 'Rejected', class: ' badge-light-danger' },
               4: { title: 'Resigned', class: ' badge-light-warning' },
@@ -452,7 +452,7 @@ $(function () {
           render: function (data, type, full, meta) {
             return (
               '<div class="d-inline-flex">' +
-              '<a class="pe-1 dropdown-toggle hide-arrow text-primary" data-bs-toggle="dropdown">' +
+              '<a class="pe-1 dropdown-toggle hide-arrow text-success" data-bs-toggle="dropdown">' +
               feather.icons['more-vertical'].toSvg({ class: 'font-small-4' }) +
               '</a>' +
               '<div class="dropdown-menu dropdown-menu-end">' +
@@ -578,7 +578,7 @@ $(function () {
           render: function (data, type, full, meta) {
             var $status_number = full['status'];
             var $status = {
-              1: { title: 'Current', class: 'badge-light-primary' },
+              1: { title: 'Current', class: 'badge-light-success' },
               2: { title: 'Professional', class: ' badge-light-success' },
               3: { title: 'Rejected', class: ' badge-light-danger' },
               4: { title: 'Resigned', class: ' badge-light-warning' },
@@ -604,7 +604,7 @@ $(function () {
           render: function (data, type, full, meta) {
             return (
               '<div class="d-inline-flex">' +
-              '<a class="pe-1 dropdown-toggle hide-arrow text-primary" data-bs-toggle="dropdown">' +
+              '<a class="pe-1 dropdown-toggle hide-arrow text-success" data-bs-toggle="dropdown">' +
               feather.icons['more-vertical'].toSvg({ class: 'font-small-4' }) +
               '</a>' +
               '<div class="dropdown-menu dropdown-menu-end">' +

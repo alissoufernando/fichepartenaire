@@ -4,7 +4,7 @@
 .bitcoin-graph{
   svg{
     height: 50px;
-    fill: $primary-color;
+    fill: $success-color;
     vertical-align: middle;
   }
   .top-bitcoin{
@@ -52,7 +52,7 @@
         .ct-slice-pie,
         .ct-slice-donut-solid,
         .ct-area {
-          fill: $primary-color;
+          fill: $success-color;
           fill-opacity: 1;
         }
       }
@@ -184,9 +184,9 @@
           width: 79%;
           padding: 10px;
           &.my-message{
-            background-color: rgba($primary-color, 0.15);
+            background-color: rgba($success-color, 0.15);
             .chat-user-img{
-              border: 2px solid rgba($primary-color, 0.15);
+              border: 2px solid rgba($success-color, 0.15);
             }
           }
           &.other-message{
@@ -214,7 +214,7 @@
             border-radius: 0;
             height: 49px;
             &:focus {
-              border-color: $primary-color;
+              border-color: $success-color;
               box-shadow: none;
             }
             border-left: 0px;

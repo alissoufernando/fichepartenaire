@@ -31,7 +31,7 @@
                             <div class="accordion-body">
                                 <div class="table-responsive">
                                     <table class="table">
-                                      <thead class="table-primary">
+                                      <thead class="table-success">
                                         <tr>
                                           <th scope="col">N°</th>
                                           <th scope="col">Intitulé</th>
@@ -93,7 +93,7 @@
                                 @else
                                 <div class="table-responsive">
                                     <table class="table">
-                                      <thead class="table-primary">
+                                      <thead class="table-success">
                                         <tr>
                                           <th scope="col">N°</th>
                                           <th scope="col">Intitulé</th>
@@ -144,7 +144,7 @@
                             <div class="accordion-body">
                                 <div class="table-responsive">
                                     <table class="table">
-                                      <thead class="table-primary">
+                                      <thead class="table-success">
                                         <tr>
                                           <th scope="col">N°</th>
                                           <th scope="col">Intitulé</th>

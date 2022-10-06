@@ -25,7 +25,7 @@ $(window).on('load', function () {
   var $earningsChart = document.querySelector('#earnings-chart');
   var $revenueReportChart = document.querySelector('#revenue-report-chart');
   var $budgetChart = document.querySelector('#budget-chart');
-  var $browserStateChartPrimary = document.querySelector('#browser-state-chart-primary');
+  var $browserStateChartsuccess = document.querySelector('#browser-state-chart-success');
   var $browserStateChartWarning = document.querySelector('#browser-state-chart-warning');
   var $browserStateChartSecondary = document.querySelector('#browser-state-chart-secondary');
   var $browserStateChartInfo = document.querySelector('#browser-state-chart-info');
@@ -37,7 +37,7 @@ $(window).on('load', function () {
   var earningsChartOptions;
   var revenueReportChartOptions;
   var budgetChartOptions;
-  var browserStatePrimaryChartOptions;
+  var browserStatesuccessChartOptions;
   var browserStateWarningChartOptions;
   var browserStateSecondaryChartOptions;
   var browserStateInfoChartOptions;
@@ -49,7 +49,7 @@ $(window).on('load', function () {
   var earningsChart;
   var revenueReportChart;
   var budgetChart;
-  var browserStatePrimaryChart;
+  var browserStatesuccessChart;
   var browserStateDangerChart;
   var browserStateInfoChart;
   var browserStateSecondaryChart;
@@ -333,7 +333,7 @@ $(window).on('load', function () {
       },
       distributed: true
     },
-    colors: [window.colors.solid.primary, window.colors.solid.warning],
+    colors: [window.colors.solid.success, window.colors.solid.warning],
     series: [
       {
         name: 'Earning',
@@ -401,7 +401,7 @@ $(window).on('load', function () {
       dashArray: [0, 5],
       width: [2]
     },
-    colors: [window.colors.solid.primary, $budgetStrokeColor2],
+    colors: [window.colors.solid.success, $budgetStrokeColor2],
     series: [
       {
         data: [61, 48, 69, 52, 60, 40, 79, 60, 59, 43, 62]
@@ -420,8 +420,8 @@ $(window).on('load', function () {
   //------------ Browser State Charts ------------
   //----------------------------------------------
 
-  // State Primary Chart
-  browserStatePrimaryChartOptions = {
+  // State success Chart
+  browserStatesuccessChartOptions = {
     chart: {
       height: 30,
       width: 30,
@@ -436,7 +436,7 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.primary],
+    colors: [window.colors.solid.success],
     series: [54.4],
     plotOptions: {
       radialBar: {
@@ -461,8 +461,8 @@ $(window).on('load', function () {
       lineCap: 'round'
     }
   };
-  browserStatePrimaryChart = new ApexCharts($browserStateChartPrimary, browserStatePrimaryChartOptions);
-  browserStatePrimaryChart.render();
+  browserStatesuccessChart = new ApexCharts($browserStateChartsuccess, browserStatesuccessChartOptions);
+  browserStatesuccessChart.render();
 
   // State Warning Chart
   browserStateWarningChartOptions = {

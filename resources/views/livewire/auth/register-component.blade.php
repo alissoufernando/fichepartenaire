@@ -5,25 +5,20 @@
         <!-- Page Body Start-->
         <div class="auth-bg">
           <div class="authentication-box">
-            <div class="text-center"><img src="../assets/images/endless-logo.png" alt=""></div>
+            <div class="text-center"><img src="../assets/images/endless-logo.png" alt="" width="100" height="100"></div>
             <div class="card mt-4 p-4">
-              <h4 class="text-center">NEW USER</h4>
-              <h6 class="text-center">Enter your Username and Password For Signup</h6>
+              <h4 class="text-center">Inscription</h4>
               <form class="theme-form" method="post" action="{{route('register')}}">
                 @csrf
                 <div class="form-row">
-                  <div class="col-md-6">
                     <div class="form-group">
-                      <label class="col-form-label">Name</label>
+                      <label class="col-form-label">Votre Nom</label>
                       <input type="text" required="" class="form-control" name="name" placeholder="Enter Your Name" value="{{old('name')}}" required autofocus autocomplete="name">
                     </div>
-                  </div>
-                  <div class="col-md-6">
                     <div class="form-group">
-                      <label class="col-form-label">Mail</label>
+                      <label class="col-form-label">Votre adresse Mail</label>
                       <input type="text" required="" class="form-control" name="email" placeholder="Enter Your Email" required value="{{old('email')}}">
                     </div>
-                  </div>
                 </div>
                 <div class="form-group">
                   <label class="col-form-label">Password</label>
@@ -36,11 +31,11 @@
                 </div>
                 <div class="form-row">
                   <div class="col-sm-4">
-                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                    <button class="btn btn-success" type="submit">S'inscrire</button>
                   </div>
                   <div class="col-sm-8">
-                    <div class="text-left mt-2 m-l-20">Are you already user?  <a class="btn-link text-capitalize"
-                        href="{{route('login')}}">Login</a></div>
+                    <div class="text-left mt-2 m-l-20">j'ai déja un compte ?  <a class="btn-link text-capitalize"
+                        href="{{route('login')}}">Se connecter</a></div>
                   </div>
                 </div>
               </form>

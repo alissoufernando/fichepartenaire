@@ -142,7 +142,7 @@
       border-color: $light-color;
     }
     hr {
-      border-color: $primary-color;
+      border-color: $success-color;
       background: $light-color;
       margin: 0;
     }
@@ -159,7 +159,7 @@
       border-color: $light-gray;
     }
     .fc-today {
-      background: $primary-color;
+      background: $success-color;
       opacity: 0.1;
     }
   }
@@ -177,8 +177,8 @@
     background: $light-gray;
   }
   .fc-state-active {
-    background-color: $primary-color !important;
-    border: 1px solid $primary-color !important;
+    background-color: $success-color !important;
+    border: 1px solid $success-color !important;
   }
   .fc-state-down {
     color: $theme-font-color;
@@ -337,8 +337,8 @@
     font-size: 12px;
     line-height: 1;
     border-radius: 4px;
-    border: 1px solid $primary-color;
-    background-color: $primary-color;
+    border: 1px solid $success-color;
+    background-color: $success-color;
     color: $white !important;
     text-decoration: none;
     text-transform: uppercase;

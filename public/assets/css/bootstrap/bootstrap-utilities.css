@@ -186,8 +186,8 @@
 .border-start-0 {
   border-left: 0 !important; }
 
-.border-primary {
-  border-color: #0d6efd !important; }
+.border-success {
+  border-color: #2a8c28 !important; }
 
 .border-secondary {
   border-color: #6c757d !important; }
@@ -854,8 +854,8 @@
 .text-center {
   text-align: center !important; }
 
-.text-primary {
-  color: #0d6efd !important; }
+.text-success {
+  color: #2a8c28 !important; }
 
 .text-secondary {
   color: #6c757d !important; }
@@ -908,8 +908,8 @@
 .lh-lg {
   line-height: 2 !important; }
 
-.bg-primary {
-  background-color: #0d6efd !important; }
+.bg-success {
+  background-color: #2a8c28 !important; }
 
 .bg-secondary {
   background-color: #6c757d !important; }

@@ -82,7 +82,7 @@ $(function () {
           showCancelButton: true,
           confirmButtonText: 'Yes',
           customClass: {
-            confirmButton: 'btn btn-primary',
+            confirmButton: 'btn btn-success',
             cancelButton: 'btn btn-outline-danger ms-2'
           },
           buttonsStyling: false

@@ -11,12 +11,12 @@
       display: block;
       width: 120px;
       height: 5px;
-      background-color: lighten($primary-color, 25%);
+      background-color: lighten($success-color, 25%);
       margin: 1px;
 
       &.br-active,
       &.br-selected {
-        background-color: $primary-color;
+        background-color: $success-color;
       }
     }
 
@@ -26,7 +26,7 @@
       font-weight: 600;
       line-height: 2;
       text-align: center;
-      color: $primary-color;
+      color: $success-color;
     }
   }
 
@@ -35,12 +35,12 @@
       cursor: default;
 
       &.br-active, &.br-selected {
-        background-color: lighten($primary-color, 10%);
+        background-color: lighten($success-color, 10%);
       }
     }
 
     .br-current-rating {
-      color: lighten($primary-color, 10%);
+      color: lighten($success-color, 10%);
     }
   }
 

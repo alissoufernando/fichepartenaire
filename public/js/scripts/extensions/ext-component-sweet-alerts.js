@@ -52,7 +52,7 @@ $(function () {
       Swal.fire({
         title: 'Any fool can use a computer',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -66,7 +66,7 @@ $(function () {
         title: 'The Internet?,',
         text: 'That thing is still around?',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -82,7 +82,7 @@ $(function () {
         text: 'Something went wrong!',
         footer: '<a href>Why do I have this issue?</a>',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -107,7 +107,7 @@ $(function () {
         cancelButtonText: feather.icons['thumbs-down'].toSvg({ class: 'font-medium-1' }),
         cancelButtonAriaLabel: 'Thumbs down',
         customClass: {
-          confirmButton: 'btn btn-primary',
+          confirmButton: 'btn btn-success',
           cancelButton: 'btn btn-outline-danger ms-1'
         },
         buttonsStyling: false
@@ -127,7 +127,7 @@ $(function () {
         showConfirmButton: false,
         timer: 1500,
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -144,7 +144,7 @@ $(function () {
         showConfirmButton: false,
         timer: 1500,
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -161,7 +161,7 @@ $(function () {
         showConfirmButton: false,
         timer: 1500,
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -178,7 +178,7 @@ $(function () {
         showConfirmButton: false,
         timer: 1500,
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -193,7 +193,7 @@ $(function () {
       Swal.fire({
         title: 'Bounce In Animation',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         showClass: {
           popup: 'animate__animated animate__bounceIn'
@@ -209,7 +209,7 @@ $(function () {
       Swal.fire({
         title: 'Fade In Animation',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         showClass: {
           popup: 'animate__animated animate__fadeIn'
@@ -225,7 +225,7 @@ $(function () {
       Swal.fire({
         title: 'Flip In Animation',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         showClass: {
           popup: 'animate__animated animate__flipInX'
@@ -241,7 +241,7 @@ $(function () {
       Swal.fire({
         title: 'Tada Animation',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         showClass: {
           popup: 'animate__animated animate__tada'
@@ -257,7 +257,7 @@ $(function () {
       Swal.fire({
         title: 'Shake Animation',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         showClass: {
           popup: 'animate__animated animate__shakeX'
@@ -277,7 +277,7 @@ $(function () {
         text: 'You clicked the button!',
         icon: 'success',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -292,7 +292,7 @@ $(function () {
         text: ' You clicked the button!',
         icon: 'error',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -307,7 +307,7 @@ $(function () {
         text: ' You clicked the button!',
         icon: 'warning',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -322,7 +322,7 @@ $(function () {
         text: 'You clicked the button!',
         icon: 'info',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -342,7 +342,7 @@ $(function () {
         imageHeight: 200,
         imageAlt: 'Custom image',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -389,7 +389,7 @@ $(function () {
         title: 'Click outside to close!',
         text: 'This is a cool message!',
         customClass: {
-          confirmButton: 'btn btn-primary'
+          confirmButton: 'btn btn-success'
         },
         buttonsStyling: false
       });
@@ -446,7 +446,7 @@ $(function () {
         title: 'Search for a GitHub user',
         input: 'text',
         customClass: {
-          confirmButton: 'btn btn-primary',
+          confirmButton: 'btn btn-success',
           cancelButton: 'btn btn-outline-danger ms-1'
         },
         buttonsStyling: false,
@@ -473,7 +473,7 @@ $(function () {
           Swal.fire({
             title: '' + result.value.login + "'s avatar",
             imageUrl: result.value.avatar_url,
-            customClass: { confirmButton: 'btn btn-primary' }
+            customClass: { confirmButton: 'btn btn-success' }
           });
         }
       });
@@ -492,7 +492,7 @@ $(function () {
         showCancelButton: true,
         confirmButtonText: 'Yes, delete it!',
         customClass: {
-          confirmButton: 'btn btn-primary',
+          confirmButton: 'btn btn-success',
           cancelButton: 'btn btn-outline-danger ms-1'
         },
         buttonsStyling: false
@@ -521,7 +521,7 @@ $(function () {
         showCancelButton: true,
         confirmButtonText: 'Yes, delete it!',
         customClass: {
-          confirmButton: 'btn btn-primary',
+          confirmButton: 'btn btn-success',
           cancelButton: 'btn btn-outline-danger ms-1'
         },
         buttonsStyling: false

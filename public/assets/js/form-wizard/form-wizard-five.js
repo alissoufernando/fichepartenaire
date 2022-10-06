@@ -10,9 +10,9 @@
                 n = a("<div>Loading</div>").addClass("loader");
                 k = a("<div></div>").addClass("action-bar");
                 p = a("<div></div>").addClass("step-container");
-                q = a("<a>" + c.labelNext + "</a>").attr("href", "#").addClass("btn btn-primary");
-                r = a("<a>" + c.labelPrevious + "</a>").attr("href", "#").addClass("btn btn-primary");
-                s = a("<a>" + c.labelFinish + "</a>").attr("href", "#").addClass("btn btn-primary");
+                q = a("<a>" + c.labelNext + "</a>").attr("href", "#").addClass("btn btn-success");
+                r = a("<a>" + c.labelPrevious + "</a>").attr("href", "#").addClass("btn btn-success");
+                s = a("<a>" + c.labelFinish + "</a>").attr("href", "#").addClass("btn btn-success");
                 c.errorSteps && 0 < c.errorSteps.length && a.each(c.errorSteps, function(a, b) {
                     y(b, !0)
                 });

@@ -12,7 +12,7 @@ $(window).on('load', function () {
 
   var $barColor = '#f3f3f3';
   var $trackBgColor = '#EBEBEB';
-  var $primary_light = '#A9A2F6';
+  var $success_light = '#A9A2F6';
   var $success_light = '#55DD92';
   var $warning_light = '#ffc085';
 
@@ -227,7 +227,7 @@ $(window).on('load', function () {
         }
       }
     },
-    colors: [window.colors.solid.primary],
+    colors: [window.colors.solid.success],
     dataLabels: {
       enabled: false
     },
@@ -506,7 +506,7 @@ $(window).on('load', function () {
         }
       }
     },
-    colors: [window.colors.solid.primary],
+    colors: [window.colors.solid.success],
     dataLabels: {
       enabled: false
     },
@@ -518,7 +518,7 @@ $(window).on('load', function () {
       type: 'gradient',
       gradient: {
         shadeIntensity: 1,
-        gradientToColors: [$primary_light],
+        gradientToColors: [$success_light],
         opacityFrom: 1,
         opacityTo: 1,
         stops: [0, 100, 100, 100]

@@ -104,7 +104,7 @@
                                     @if ($this->nmber > 0)
 
                                         <div class="card">
-                                            <div class="card-header bg-primary">
+                                            <div class="card-header bg-success">
                                                 <h5 class="mb-0">
                                                     Les caractéristiques de l'activités
                                                 </h5>
@@ -250,7 +250,7 @@
                                                                 @endfor
 
                                                         </div>
-                                                        <button class="btn btn-info" wire:click.prevent="ajoutResultat">Ajouter</button>
+                                                        <button class="btn btn-success" wire:click.prevent="ajoutResultat">Ajouter</button>
 
                                                     </div>
                                                 </div>
@@ -314,12 +314,12 @@
 
                                             <div class="col">
                                                 <div class="form-group m-t-15 m-checkbox-inline mb-0 custom-radio-ml">
-                                                    <div class="radio radio-primary">
+                                                    <div class="radio radio-success">
                                                         <input id="radioinline1" type="radio" name="radio1"
                                                             value="0" wire:model="is_whatsapp">
                                                         <label class="mb-0" for="radioinline1">Non</label>
                                                     </div>
-                                                    <div class="radio radio-primary">
+                                                    <div class="radio radio-success">
                                                         <input id="radioinline2" type="radio" name="radio1"
                                                             value="1" wire:model="is_whatsapp">
                                                         <label class="mb-0" for="radioinline2">Oui</label>
@@ -363,11 +363,11 @@
                                     </div>
                                     <div>
                                         @if ($this->nmber == 0)
-                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn btn-primary btn-sm"> Soumettre</a>
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn btn-success btn-sm"> Soumettre</a>
 
                                         @else
 
-                                        <button type="submit" class="btn btn-primary btn-sm"> Soumettre</button>
+                                        <button type="submit" class="btn btn-success btn-sm"> Soumettre</button>
                                         @endif
                                     </div>
                                 </form>

@@ -2,8 +2,8 @@ var myLineChart = {
     labels: ["","2009", "2010", "2011", "2012", "2013", "2014"],
     datasets: [{
         fillColor: "transparent",
-        strokeColor: endlessAdminConfig.primary,
-        pointColor: endlessAdminConfig.primary,
+        strokeColor: endlessAdminConfig.success,
+        pointColor: endlessAdminConfig.success,
         data: [20, 33, 20, 50, 20, 33, 20, 0]
     }]
 }
@@ -21,8 +21,8 @@ var myLineChart1 = {
     labels: ["","2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"],
     datasets: [{
         fillColor: "transparent",
-        strokeColor: endlessAdminConfig.primary,
-        pointColor: endlessAdminConfig.primary,
+        strokeColor: endlessAdminConfig.success,
+        pointColor: endlessAdminConfig.success,
         data: [5, 0, 5, 0, 15, 0, 5, 0, 5]
     }]
 }

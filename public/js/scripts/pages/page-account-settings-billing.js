@@ -52,7 +52,7 @@ $(function () {
         showCancelButton: true,
         confirmButtonText: 'Yes',
         customClass: {
-          confirmButton: 'btn btn-primary',
+          confirmButton: 'btn btn-success',
           cancelButton: 'btn btn-outline-danger ms-1'
         },
         buttonsStyling: false
@@ -158,7 +158,7 @@ $(function () {
               roleObj = {
                 Sent: { class: 'bg-light-secondary', icon: 'send' },
                 Paid: { class: 'bg-light-success', icon: 'check-circle' },
-                Draft: { class: 'bg-light-primary', icon: 'save' },
+                Draft: { class: 'bg-light-success', icon: 'save' },
                 Downloaded: { class: 'bg-light-info', icon: 'arrow-down-circle' },
                 'Past Due': { class: 'bg-light-danger', icon: 'info' },
                 'Partial Payment': { class: 'bg-light-warning', icon: 'pie-chart' }

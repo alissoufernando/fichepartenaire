@@ -91,12 +91,12 @@
     if (navbarColor) {
       body
         .find(navbar)
-        .removeClass('bg-primary bg-secondary bg-success bg-danger bg-info bg-warning bg-dark')
+        .removeClass('bg-success bg-secondary bg-success bg-danger bg-info bg-warning bg-dark')
         .addClass(navbarColor + ' navbar-dark');
     } else {
       body
         .find(navbar)
-        .removeClass('bg-primary bg-secondary bg-success bg-danger bg-info bg-warning bg-dark navbar-dark');
+        .removeClass('bg-success bg-secondary bg-success bg-danger bg-info bg-warning bg-dark navbar-dark');
     }
     if (html.hasClass('dark-layout')) {
       navbar.addClass('navbar-dark');

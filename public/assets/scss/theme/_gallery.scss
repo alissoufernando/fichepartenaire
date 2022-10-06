@@ -167,7 +167,7 @@
 
   .hover-12{
     > div{
-      background: $primary-color;
+      background: $success-color;
       img {
         opacity: 1;
         -webkit-transition: .3s ease-in-out;
@@ -281,7 +281,7 @@
         &.hover-12 {
           a {
             > div {
-              background: $primary-color;
+              background: $success-color;
             }
           }
         }

@@ -74,7 +74,7 @@
   }
 }
 
-$alert-name:primary,
+$alert-name:success,
 secondary,
 success,
 danger,
@@ -83,7 +83,7 @@ info,
 light,
 dark;
 
-$alert-color :$primary-color,
+$alert-color :$success-color,
 $secondary-color,
 $success-color,
 $danger-color,

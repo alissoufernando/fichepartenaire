@@ -60,13 +60,13 @@
 .u-step {
   &.active, &.current {
     color: $white;
-    background-color: $primary-color;
+    background-color: $success-color;
   }
   &.active .u-step-title, &.current .u-step-title {
     color: $white;
   }
   &.active .u-step-number, &.current .u-step-number {
-    color: $primary-color;
+    color: $success-color;
     background-color: $white;
   }
   &.disabled {
@@ -247,19 +247,19 @@
 .u-pearl {
   &.active {
     &:after, &:before {
-      background-color: $primary-color;
+      background-color: $success-color;
     }
   }
   &.current {
     &:after, &:before {
-      background-color: $primary-color !important;
+      background-color: $success-color !important;
     }
   }
   &.active {
     .u-pearl-icon, .u-pearl-number {
-      color: $primary-color;
+      color: $success-color;
       background-color: $white;
-      border-color: $primary-color;
+      border-color: $success-color;
       -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
       -o-transform: scale(1.3);
@@ -268,9 +268,9 @@
   }
   &.current {
     .u-pearl-icon, .u-pearl-number {
-      color: $primary-color;
+      color: $success-color;
       background-color: $white;
-      border-color: $primary-color;
+      border-color: $success-color;
       -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
       -o-transform: scale(1.3);
@@ -291,7 +291,7 @@
   }
   &.error {
     &:before {
-      background-color: $primary-color;
+      background-color: $success-color;
     }
     &:after {
       background-color: $light-color;
@@ -304,12 +304,12 @@
   }
   &.done {
     &:after, &:before {
-      background-color: $primary-color !important;
+      background-color: $success-color !important;
     }
     .u-pearl-icon, .u-pearl-number {
       color: $white;
-      background-color: $primary-color;
-      border-color: $primary-color;
+      background-color: $success-color;
+      border-color: $success-color;
     }
   }
 }

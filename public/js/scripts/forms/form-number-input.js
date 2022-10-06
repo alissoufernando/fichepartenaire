@@ -12,8 +12,8 @@
 
   // Default Spin
   $('.touchspin').TouchSpin({
-    buttondown_class: 'btn btn-primary',
-    buttonup_class: 'btn btn-primary',
+    buttondown_class: 'btn btn-success',
+    buttonup_class: 'btn btn-success',
     buttondown_txt: feather.icons['minus'].toSvg(),
     buttonup_txt: feather.icons['plus'].toSvg()
   });
@@ -62,8 +62,8 @@
 
   // Color Options
   $('.touchspin-color').each(function (index) {
-    var down = 'btn btn-primary',
-      up = 'btn btn-primary',
+    var down = 'btn btn-success',
+      up = 'btn btn-success',
       $this = $(this);
     if ($this.data('bts-button-down-class')) {
       down = $this.data('bts-button-down-class');

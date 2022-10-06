@@ -50,9 +50,9 @@ var barData = {
     }, {
         label: "My Second dataset",
         fillColor: "rgba(68, 102, 242, 0.4)",
-        strokeColor: "#4466f2",
+        strokeColor: "#2a8c28",
         highlightFill: "rgba(68, 102, 242, 0.8)",
-        highlightStroke: "#4466f2",
+        highlightStroke: "#2a8c28",
         data: [28, 48, 40, 19, 86, 27, 90]
     }]
 };
@@ -73,7 +73,7 @@ var myBarChart = new Chart(barCtx).Bar(barData, barOptions);
 var polarData = [
     {
         value: 300,
-        color: "#4466f2",
+        color: "#2a8c28",
         highlight: "rgba(68, 102, 242, 0.8)",
         label: "Yellow"
     }, {
@@ -121,8 +121,8 @@ var lineGraphData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(68, 102, 242, 0.3)",
-        strokeColor: "#4466f2",
-        pointColor: "#4466f2",
+        strokeColor: "#2a8c28",
+        pointColor: "#2a8c28",
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "#000",
@@ -162,9 +162,9 @@ var radarData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(68, 102, 242, 0.4)",
-        strokeColor: "#4466f2",
-        pointColor: "#4466f2",
-        pointStrokeColor: "#4466f2",
+        strokeColor: "#2a8c28",
+        pointColor: "#2a8c28",
+        pointStrokeColor: "#2a8c28",
         pointHighlightFill: "#263238",
         pointHighlightStroke: "rgba(68, 102, 242, 0.4)",
         data: [12, 3, 5, 18, 7]
@@ -194,7 +194,7 @@ var pieData = [
         value: 300,
         color: "#ab8ce4",
         highlight: "#ab8ce4",
-        label: "Primary"
+        label: "success"
     },
     {
         value: 50,
@@ -225,9 +225,9 @@ var pieOptions = {
 var doughnutData = [
     {
         value: 300,
-        color: "#4466f2",
-        highlight: "#4466f2",
-        label: "Primary"
+        color: "#2a8c28",
+        highlight: "#2a8c28",
+        label: "success"
     },
     {
         value: 50,
@@ -259,8 +259,8 @@ var myLineChart = {
     labels: ["","10", "20", "30", "40", "50", "60", "70", "80"],
     datasets: [{
         fillColor: "rgba(68, 102, 242, 0.2)",
-        strokeColor: "#4466f2",
-        pointColor: "#4466f2",
+        strokeColor: "#2a8c28",
+        pointColor: "#2a8c28",
         data: [10, 20, 40, 30, 0, 20, 10, 30, 10]
     },{
         fillColor: "rgba(30, 166, 236, 0.2)",

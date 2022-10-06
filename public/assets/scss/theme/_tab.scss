@@ -3,7 +3,7 @@
 ==========================**/
 .nav-pills {
   .nav-link.active, .show > .nav-link {
-    background-color: $primary-color;
+    background-color: $success-color;
   }
 }
 .nav{
@@ -13,7 +13,7 @@
 }
 
 $nav-name:theme,
-primary,
+success,
 secondary,
 success,
 danger,
@@ -21,8 +21,8 @@ info,
 light,
 dark,
 warning;
-$nav-color:$primary-color,
-$primary-color,
+$nav-color:$success-color,
+$success-color,
 $secondary-color,
 $success-color,
 $danger-color,
@@ -76,10 +76,10 @@ $warning-color;
       border-bottom: 2px solid $transparent-color;
       transition: 0.3s;
       &.active, &.show, &:focus, &:hover {
-        color: $primary-color;
+        color: $success-color;
       }
       &.active, &.show, &:focus {
-        border-bottom: 2px solid $primary-color;
+        border-bottom: 2px solid $success-color;
       }
     }
   }
@@ -92,8 +92,8 @@ $warning-color;
   }
   .nav-link.active,.show > .nav-link{
     background-color: transparent;
-    border-left-color: $primary-color;
-    color: $primary-color;
+    border-left-color: $success-color;
+    color: $success-color;
     border-radius: 0;
     transition: all 0.3s ease;
   }
@@ -107,14 +107,14 @@ $warning-color;
   }
   .nav-link.active,.show > .nav-link{
     background-color: transparent;
-    border-right-color: $primary-color;
-    color: $primary-color;
+    border-right-color: $success-color;
+    color: $success-color;
     border-radius: 0;
     transition: all 0.3s ease;
   }
 }
 $m-nav-name:theme,
-primary,
+success,
 secondary,
 success,
 danger,
@@ -122,8 +122,8 @@ info,
 light,
 dark,
 warning;
-$nav-color:$primary-color,
-$primary-color,
+$nav-color:$success-color,
+$success-color,
 $secondary-color,
 $success-color,
 $danger-color,

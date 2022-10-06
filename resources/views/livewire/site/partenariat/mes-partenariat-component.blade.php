@@ -21,7 +21,7 @@
                         <div class="alert alert-success">{{Session::get('message')}}</div>
                         @endif --}}
                         <h5 class="d-inline">Liste de mes partenariats</h5>
-                        <a href="{{ route('creation.de.artenariat') }}"  class="btn  btn-primary btn-sm float-end">Ajouter</a>
+                        <a href="{{ route('creation.de.artenariat') }}"  class="btn  btn-success btn-sm float-end">Ajouter</a>
 
                     </div>
 
@@ -50,7 +50,7 @@
                                     <td>{{$partner->object_partener_id}}</td>
                                     <td>{{$partner->year_signature}}</td>
                                     <td>
-                                    <a href="{{route('partner.detail',['id' => $partner->id])}}"> <i class="fa fa-list fa-1x m-5 text-primary"></i> </a>
+                                    <a href="{{route('partner.detail',['id' => $partner->id])}}"> <i class="fa fa-list fa-1x m-5 text-success"></i> </a>
                                     <a href="{{route('partner.edit',['id' => $partner->id])}}"> <i class="fa fa-edit fa-1x m-5 text-warning"></i> </a>
                                     <a href="#" wire:click.prevent="deletePartner({{$partner->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
                                     </td>

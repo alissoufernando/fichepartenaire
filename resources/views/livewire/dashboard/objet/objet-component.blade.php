@@ -21,7 +21,7 @@
                         <div class="alert alert-success">{{Session::get('message')}}</div>
                     @endif
                         <h5 class="d-inline">Liste des objets</h5>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn  btn-primary btn-sm float-end">Ajouter</a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn  btn-success btn-sm float-end">Ajouter</a>
 
                     </div>
 

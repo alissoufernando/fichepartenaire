@@ -98,20 +98,20 @@
  */
 
 @import "theme/variables";
-$primary-color: #4c2fbf;
+$success-color: #4c2fbf;
 $secondary-color :#2e9de4;
-$gradient-primary: linear-gradient($secondary-color, $primary-color);
-$all-focus-outline-color: $primary-color;
-$code-tag-color: $primary-color;
-$list-group-active-bg-color: $primary-color;
-$list-group-active-border-color: $primary-color;
-$tour-color: $primary-color;
-$main-header-right-toggle-color : $primary-color;
-$main-header-right-nav-icon-color :  $primary-color;
-$light-body-bg-color: rgba($primary-color, 0.10);
+$gradient-success: linear-gradient($secondary-color, $success-color);
+$all-focus-outline-color: $success-color;
+$code-tag-color: $success-color;
+$list-group-active-bg-color: $success-color;
+$list-group-active-border-color: $success-color;
+$tour-color: $success-color;
+$main-header-right-toggle-color : $success-color;
+$main-header-right-nav-icon-color :  $success-color;
+$light-body-bg-color: rgba($success-color, 0.10);
 $page-body-bg-color: $light-color;
-$card-box-shadow     :1px 5px 24px 0 rgba($primary-color, 0.05);
-$pre-tag-bg-color: rgba($primary-color, 0.05);
+$card-box-shadow     :1px 5px 24px 0 rgba($success-color, 0.05);
+$pre-tag-bg-color: rgba($success-color, 0.05);
 
 @import "theme/general";
 @import "theme/generic";

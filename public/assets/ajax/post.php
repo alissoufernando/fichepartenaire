@@ -21,8 +21,8 @@
 // DB table to use
 $table = 'datatables_demo';
 
-// Table's primary key
-$primaryKey = 'id';
+// Table's success key
+$successKey = 'id';
 
 // Array of database columns which should be read and sent back to DataTables.
 // The `db` parameter represents the column name in the database, while the `dt`
@@ -66,6 +66,6 @@ $sql_details = array(
 require( 'ssp.class.php' );
 
 echo json_encode(
-	SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns )
+	SSP::simple( $_POST, $sql_details, $table, $successKey, $columns )
 );
 

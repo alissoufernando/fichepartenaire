@@ -265,7 +265,7 @@ $(function () {
           render: function (data, type, full, meta) {
             var $status_number = full['status'];
             var $status = {
-              1: { title: 'Current', class: 'badge-light-primary' },
+              1: { title: 'Current', class: 'badge-light-success' },
               2: { title: 'Professional', class: ' badge-light-success' },
               3: { title: 'Rejected', class: ' badge-light-danger' },
               4: { title: 'Resigned', class: ' badge-light-warning' },

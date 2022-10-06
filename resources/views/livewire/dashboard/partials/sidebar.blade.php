@@ -1,7 +1,7 @@
 <!-- Page Sidebar Start-->
 <div class="page-sidebar">
   <div class="main-header-left d-none d-lg-block">
-    <div class="logo-wrapper"><a href=""><img src="{{asset('assets/images/endless-logo.png')}}" alt=""></a></div>
+    <div class="logo-wrapper"><a href=""><img src="{{asset('assets/images/endless-logo.png')}}" alt="" width="60" height="60"></a></div>
   </div>
   <div class="sidebar custom-scrollbar">
 
@@ -13,27 +13,27 @@
         @can('admin-and-super-admin')
 
         <li>
-            <a href="{{route('partenaire')}}" class="sidebar-header {{ Route::currentRouteName()== 'partenaire' ? 'active' : '' }}"><i data-feather="home"></i><span>Les partenaires</span></i>
+            <a href="{{route('partenaire')}}" class="sidebar-header {{ Route::currentRouteName()== 'partenaire' ? 'active' : '' }}"><i data-feather="users"></i><span>Les partenaires</span></i>
             </a>
         </li>
         <li>
-            <a href="{{route('object')}}" class="sidebar-header {{ Route::currentRouteName()== 'object' ? 'active' : '' }}"><i data-feather="home"></i><span>Objects partenariat</span></i>
+            <a href="{{route('object')}}" class="sidebar-header {{ Route::currentRouteName()== 'object' ? 'active' : '' }}"><i data-feather="tag"></i><span>Objects partenariat</span></i>
             </a>
         </li>
         <li>
-            <a href="{{route('struture')}}" class="sidebar-header {{ Route::currentRouteName()== 'struture' ? 'active' : '' }}"><i data-feather="home"></i><span>Strutures</span></i>
+            <a href="{{route('struture')}}" class="sidebar-header {{ Route::currentRouteName()== 'struture' ? 'active' : '' }}"><i data-feather="layers"></i><span>Strutures</span></i>
             </a>
         </li>
         <li>
-            <a href="{{route('entite')}}" class="sidebar-header {{ Route::currentRouteName()== 'entite' ? 'active' : '' }}"><i data-feather="home"></i><span>Entités</span></i>
+            <a href="{{route('entite')}}" class="sidebar-header {{ Route::currentRouteName()== 'entite' ? 'active' : '' }}"><i data-feather="book-open"></i><span>Entités</span></i>
             </a>
         </li>
         <li>
-            <a href="{{route('type')}}" class="sidebar-header {{ Route::currentRouteName()== 'type' ? 'active' : '' }}"><i data-feather="home"></i><span>Types de partenariat</span></i>
+            <a href="{{route('type')}}" class="sidebar-header {{ Route::currentRouteName()== 'type' ? 'active' : '' }}"><i data-feather="slack"></i><span>Types de partenariat</span></i>
             </a>
         </li>
         <li>
-            <a href="{{route('allpartenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'allpartenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>Tous les partenariats</span></i>
+            <a href="{{route('allpartenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'allpartenariat' ? 'active' : '' }}"><i data-feather="at-sign"></i><span>Tous les partenariats</span></i>
             </a>
         </li>
 
@@ -47,11 +47,11 @@
             </ul>
         </li>
         <li>
-            <a href="{{route('creation.de.artenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'creation.de.artenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>créer un partenariat</span></i>
+            <a href="{{route('creation.de.artenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'creation.de.artenariat' ? 'active' : '' }}"><i data-feather="plus-square"></i><span>créer un partenariat</span></i>
             </a>
         </li>
         <li>
-            <a href="{{route('mes.partenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'mes.partenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>Mes partenariats</span></i>
+            <a href="{{route('mes.partenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'mes.partenariat' ? 'active' : '' }}"><i data-feather="gift"></i><span>Mes partenariats</span></i>
             </a>
         </li>
         @endcan
@@ -59,11 +59,11 @@
         @can('user')
 
         <li>
-            <a href="{{route('creation.de.artenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'creation.de.artenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>créer un partenariat</span></i>
+            <a href="{{route('creation.de.artenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'creation.de.artenariat' ? 'active' : '' }}"><i data-feather="plus-square"></i><span>créer un partenariat</span></i>
             </a>
         </li>
         <li>
-            <a href="{{route('mes.partenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'mes.partenariat' ? 'active' : '' }}"><i data-feather="home"></i><span>Mes partenariats</span></i>
+            <a href="{{route('mes.partenariat')}}" class="sidebar-header {{ Route::currentRouteName()== 'mes.partenariat' ? 'active' : '' }}"><i data-feather="gift"></i><span>Mes partenariats</span></i>
             </a>
         </li>
         @endcan
@@ -76,7 +76,7 @@
   </div>
 </div>
 <!-- Page Sidebar Ends-->
-<!-- Right sidebar Start-->
+{{-- <!-- Right sidebar Start-->
 <div class="right-sidebar" id="right_side_bar">
   <div>
     <div class="container p-0">
@@ -147,4 +147,4 @@
       </div>
   </div>
 </div>
-<!-- Right sidebar Ends-->
+<!-- Right sidebar Ends--> --}}

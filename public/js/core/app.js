@@ -8,7 +8,7 @@
 ==========================================================================================*/
 window.colors = {
   solid: {
-    primary: '#7367F0',
+    success: '#7367F0',
     secondary: '#82868b',
     success: '#28C76F',
     info: '#00cfe8',
@@ -20,7 +20,7 @@ window.colors = {
     body: '#f8f8f8'
   },
   light: {
-    primary: '#7367F01a',
+    success: '#7367F01a',
     secondary: '#82868b1a',
     success: '#28C76F1a',
     info: '#00cfe81a',
@@ -97,8 +97,8 @@ window.colors = {
     // Cart dropdown touchspin
     if ($('.touchspin-cart').length > 0) {
       $('.touchspin-cart').TouchSpin({
-        buttondown_class: 'btn btn-primary',
-        buttonup_class: 'btn btn-primary',
+        buttondown_class: 'btn btn-success',
+        buttonup_class: 'btn btn-success',
         buttondown_txt: feather.icons['minus'].toSvg(),
         buttonup_txt: feather.icons['plus'].toSvg()
       });
@@ -127,7 +127,7 @@ window.colors = {
       }
       // Block Element
       block_ele.block({
-        message: feather.icons['refresh-cw'].toSvg({ class: 'font-medium-1 spinner text-primary' }),
+        message: feather.icons['refresh-cw'].toSvg({ class: 'font-medium-1 spinner text-success' }),
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
           backgroundColor: reloadActionOverlay,
@@ -232,7 +232,7 @@ window.colors = {
         // to change text color after limit is maxedout out
         charTextarea.addClass('max-limit');
       } else {
-        counterValue.css('background-color', window.colors.solid.primary);
+        counterValue.css('background-color', window.colors.solid.success);
         charTextarea.css('color', $textcolor);
         charTextarea.removeClass('max-limit');
       }

@@ -100,8 +100,8 @@ $timeliny_small-breakdown: 768px;
 			position: relative;
 			&.active {
 				.#{$timeliny_classname}-dot {
-					border-color: $primary-color;
-					background-color: $primary-color;
+					border-color: $success-color;
+					background-color: $success-color;
 					box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.33);
 					&::before {
 						color: $dark-color;
@@ -109,7 +109,7 @@ $timeliny_small-breakdown: 768px;
 					&::after {
 						color: $dark-color;
 						opacity: 1;
-						background-color: rgba($primary-color , 0.4);
+						background-color: rgba($success-color , 0.4);
 						border: 1px solid $light-semi-gray;
 						padding: 10px;
 						border-radius: 5px;
@@ -159,7 +159,7 @@ $timeliny_small-breakdown: 768px;
 		top: 0;
 		width: 1px;
 		height: 100%;
-		background-color: $primary-color;
+		background-color: $success-color;
 
 		@media (min-width: $timeliny_small-breakdown) {
 			left: $timeliny_vertical-line-pos;
@@ -173,7 +173,7 @@ $timeliny_small-breakdown: 768px;
 			height: 0;
 			border-left: 8px solid transparent;
 			border-right: 8px solid transparent;
-			border-top: 8px solid $primary-color;
+			border-top: 8px solid $success-color;
 		}
 		&::after {
 			content: '';
@@ -184,7 +184,7 @@ $timeliny_small-breakdown: 768px;
 			height: 0;
 			border-left: 8px solid transparent;
 			border-right: 8px solid transparent;
-			border-bottom: 8px solid $primary-color;
+			border-bottom: 8px solid $success-color;
 		}
 	}
 

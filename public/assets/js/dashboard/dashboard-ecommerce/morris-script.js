@@ -39,7 +39,7 @@ var morris_chart = {
             xkey: 'x',
             ykeys: ['z'],
             labels: ['Z'],
-            lineColors: [endlessAdminConfig.primary],
+            lineColors: [endlessAdminConfig.success],
         })
     }
 };
@@ -70,7 +70,7 @@ $(function() {
             ymin: -1,
             ymax: 1,
             hideHover: !0,
-            lineColors: [endlessAdminConfig.primary],
+            lineColors: [endlessAdminConfig.success],
         }),
         h = function() {
             e++, g.setData(f(5 * e)), $(".reloadStatus").text(e + " reloads")

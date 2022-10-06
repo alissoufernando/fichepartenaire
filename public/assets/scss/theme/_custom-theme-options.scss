@@ -70,7 +70,7 @@ $i:1;
 					@if($sidebar-name == light){
 						.sidebar-user {
 							h6{
-								color: $primary-color;
+								color: $success-color;
 							}
 							p{
 								color: 	$theme-body-font-color
@@ -81,7 +81,7 @@ $i:1;
 								> a {
 									color: $theme-body-font-color;
 									&:hover {
-										color: $primary-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -90,13 +90,13 @@ $i:1;
 									> a{
 										color: $theme-body-font-color;
 										&:hover,&.active{
-											color: $primary-color;
+											color: $success-color;
 										}
 									}
 									&.active {
 										> a{
 											&.active{
-												color: $primary-color;
+												color: $success-color;
 											}
 										}
 									}
@@ -133,7 +133,7 @@ $i:1;
 			&[sidebar-layout="iconcolor-sidebar"]{
 				.sidebar-menu{
 					li{
-						$colors: $success-color, $secondary-color, $primary-color, $danger-color, $info-color, $warning-color, $light-color;
+						$colors: $success-color, $secondary-color, $success-color, $danger-color, $info-color, $warning-color, $light-color;
 						$repeat: 100 ;
 						@for $i from 1 through $repeat {
 							&:nth-child(#{length($colors)}n+#{$i}) {
@@ -154,7 +154,7 @@ $i:1;
 				&.light-sidebar{
 					.sidebar-menu{
 						li{
-							$colors: $success-color, $secondary-color, $primary-color, $danger-color, $info-color, $warning-color, $dark-color;
+							$colors: $success-color, $secondary-color, $success-color, $danger-color, $info-color, $warning-color, $dark-color;
 							$repeat: 100 ;
 							@for $i from 1 through $repeat {
 								&:nth-child(#{length($colors)}n+#{$i}) {
@@ -350,7 +350,7 @@ body {
 					background-color: $white;
 					.sidebar-user {
 						h6{
-							color: $primary-color;
+							color: $success-color;
 						}
 						p{
 							color: 	$theme-body-font-color
@@ -361,7 +361,7 @@ body {
 							> a {
 								color: $theme-body-font-color;
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -370,13 +370,13 @@ body {
 								> a{
 									color: $theme-body-font-color;
 									&:hover,&.active{
-										color: $primary-color;
+										color: $success-color;
 									}
 								}
 								&.active {
 									> a{
 										&.active{
-											color: $primary-color;
+											color: $success-color;
 										}
 									}
 								}
@@ -451,7 +451,7 @@ body {
 					&.current {
 						background-color: $dark-card-background;
 						a {
-							color: $primary-color;
+							color: $success-color;
 						}
 					}
 				}
@@ -758,10 +758,10 @@ body {
 										}
 									}
 									&:hover{
-										color: $primary-color;
+										color: $success-color;
 										svg{
 											line, path, circle{
-												color: $primary-color !important;
+												color: $success-color !important;
 											}
 										}
 									}
@@ -927,7 +927,7 @@ body {
 					}
 					.sidebar-menu {
 						.sidebar-title {
-							color: $primary-color;
+							color: $success-color;
 							border-bottom: 1px solid rgba(241, 241, 241, 0.35);
 						}
 						>
@@ -935,10 +935,10 @@ body {
 							> a {
 								color: $dark-all-font-color;
 								&.active {
-									color: $primary-color;
+									color: $success-color;
 								}
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 							.label {
@@ -1229,18 +1229,18 @@ body {
 								th {
 									border-bottom: 2px solid $dark-border-color;
 								}
-								.border-bottom-primary {
+								.border-bottom-success {
 									th{
-										border-bottom: 1px solid $primary-color;
+										border-bottom: 1px solid $success-color;
 									}
 								}
 							}
-							.table-primary, .table-secondary, .table-success, .table-info, .table-warning, .table-light, .table-danger {
+							.table-success, .table-secondary, .table-success, .table-info, .table-warning, .table-light, .table-danger {
 								th, td {
 									color: $theme-body-font-color;
 								}
 							}
-							.bg-primary, .bg-secondary, .bg-success, .bg-info, .bg-warning, .bg-danger {
+							.bg-success, .bg-secondary, .bg-success, .bg-info, .bg-warning, .bg-danger {
 								color: $white;
 							}
 							.bg-light {
@@ -1252,9 +1252,9 @@ body {
 								}
 							}
 							tbody {
-								.border-bottom-primary{
+								.border-bottom-success{
 									th, td{
-										border-bottom: 1px solid $primary-color;
+										border-bottom: 1px solid $success-color;
 									}
 								}
 							}
@@ -1338,7 +1338,7 @@ body {
 							input {
 								&:checked {
 									+ .switch-state {
-										background-color: $primary-color;
+										background-color: $success-color;
 									}
 								}
 							}
@@ -1568,7 +1568,7 @@ body {
 									color: $dark-all-font-color !important;
 									&.current,
 									&:active{
-										border-color: $primary-color;
+										border-color: $success-color;
 									}
 								}
 								.paginate_button.disabled {
@@ -1649,7 +1649,7 @@ body {
 						}
 						.page-item.active {
 							.page-link {
-								background-color: $primary-color;
+								background-color: $success-color;
 							}
 						}
 						.ecommerce-widget {
@@ -1697,7 +1697,7 @@ body {
 								&.active,
 								&:focus,
 								&:hover{
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -1707,7 +1707,7 @@ body {
 									background-color: $dark-border-color;
 									&.br-active,
 									&.br-selected{
-										background-color: $primary-color;
+										background-color: $success-color;
 									}
 								}
 							}
@@ -1720,8 +1720,8 @@ body {
 									color: $dark-all-font-color;
 									&.br-active,
 									&.br-selected{
-										border: 2px solid $primary-color;
-										color: $primary-color;
+										border: 2px solid $success-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -1735,7 +1735,7 @@ body {
 									&.br-selected,
 									&.br-active{
 										&:after{
-											color: $primary-color;
+											color: $success-color;
 										}
 									}
 								}
@@ -1792,7 +1792,7 @@ body {
 						background-color: $dark-body-background;
 					}
 					.form-builder {
-						.nav-primary {
+						.nav-success {
 							.show {
 								> .nav-link {
 									color: $white;
@@ -1804,7 +1804,7 @@ body {
 									color: $white;
 								}
 							}
-							.nav-pills.nav-primary {
+							.nav-pills.nav-success {
 								.show {
 									> .nav-link {
 										color: $white;
@@ -1926,7 +1926,7 @@ body {
 							a {
 								color: $dark-all-font-color;
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -1946,7 +1946,7 @@ body {
 							button{
 								&:hover
 								{
-									color: $primary-color!important;
+									color: $success-color!important;
 								}
 							}
 						}
@@ -1958,9 +1958,9 @@ body {
 									color: $dark-all-font-color;
 								}
 								&:hover{
-									color: $primary-color;
+									color: $success-color;
 									a{
-										color: $primary-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -1982,7 +1982,7 @@ body {
 										&:hover{
 											svg{
 												path, line, polyline, polygon, rect{
-													color: $primary-color !important;
+													color: $success-color !important;
 												}
 											}
 										}
@@ -2184,13 +2184,13 @@ body {
 												.form {
 													input {
 														border: none !important;
-														border-bottom: 1px solid $primary-color !important;
+														border-bottom: 1px solid $success-color !important;
 													}
 												}
 												a {
 													color: $dark-all-font-color;
 													&:hover {
-														color: $primary-color;
+														color: $success-color;
 													}
 												}
 											}
@@ -2471,7 +2471,7 @@ body {
 						}
 					}
 					.card-absolute{
-						.bg-primary, .bg-secondary{
+						.bg-success, .bg-secondary{
 							h5{
 								color: $white;
 							}
@@ -2663,8 +2663,8 @@ body {
 					border-top-width: 0;
 				}
 				&.active {
-					background-color: $primary-color;
-					border-color: $primary-color;
+					background-color: $success-color;
+					border-color: $success-color;
 					color: $white;
 				}
 				&:hover,
@@ -2686,7 +2686,7 @@ body {
 					border-radius: 0;
 				}
 			}
-			.list-group-item-primary {
+			.list-group-item-success {
 				color: #004085;
 				background-color: #b8daff;
 			}
@@ -2936,11 +2936,11 @@ body {
 							&:focus,
 							&:active,
 							&.highlighted{
-								color: $primary-color;
+								color: $success-color;
 							}
 							&.current{
 								background-color: $dark-body-background;
-								color: $primary-color;
+								color: $success-color;
 							}
 						}
 					}
@@ -2967,7 +2967,7 @@ body {
 					div{
 						a{
 							&:hover{
-								color: $primary-color;
+								color: $success-color;
 							}
 						}
 					}
@@ -2985,10 +2985,10 @@ body {
 						color: $dark-small-font-color !important;
 					}
 				}
-				.bg-primary{
+				.bg-success{
 					.btn-link{
-						background-color: $primary-color;
-						border: 1px solid $primary-color;
+						background-color: $success-color;
+						border: 1px solid $success-color;
 					}
 				}
 				.bg-secondary{
@@ -3182,9 +3182,9 @@ body {
 			border: 1px solid $dark-border-color;
 		}
 		.select2-drpdwn {
-			.form-control-primary {
-				border-color: $primary-color !important;
-				color: $primary-color !important;
+			.form-control-success {
+				border-color: $success-color !important;
+				color: $success-color !important;
 			}
 			.form-control-secondary {
 				border-color: $secondary-color !important;
@@ -3210,8 +3210,8 @@ body {
 				border-color: $white !important;
 				color: $white !important;
 			}
-			.form-control-primary-fill{
-				background-color: $primary-color !important;
+			.form-control-success-fill{
+				background-color: $success-color !important;
 				color: $white !important;
 			}
 			.form-control-secondary-fill{
@@ -3329,7 +3329,7 @@ body {
 			background: $dark-border-color;
 			&.active,
 			&.current{
-				background: $primary-color;
+				background: $success-color;
 				color: $white;
 			}
 		}
@@ -3428,12 +3428,12 @@ body {
 			.nav-link{
 				color: $dark-all-font-color;
 				&.active{
-					color: $primary-color;
+					color: $success-color;
 				}
 			}
 			.show {
 				> .nav-link{
-					color: $primary-color;
+					color: $success-color;
 				}
 			}
 		}
@@ -3625,7 +3625,7 @@ body {
 						&.completed{
 							.task-container{
 								.task-label{
-									color: $primary-color;
+									color: $success-color;
 								}
 								.complete-btn{
 									&:hover{
@@ -3847,14 +3847,14 @@ body {
 			span{
 				+ span{
 					+ span{
-						border: 1px solid $primary-color;
+						border: 1px solid $success-color;
 						background-color: $dark-body-background;
 						border-radius: 4px;
 					}
 				}
 			}
 			i{
-				background-color: $primary-color;
+				background-color: $success-color;
 				color: $white;
 				padding: 20px;
 				margin-right: 20px !important;
@@ -4039,7 +4039,7 @@ body {
 				}
 			}
 		}
-		@each $btn-name, $btn-color in (primary, $primary-color),
+		@each $btn-name, $btn-color in (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -4072,7 +4072,7 @@ body {
 			}
 		}
 
-		@each $btn-name, $btn-color in (primary, $primary-color),
+		@each $btn-name, $btn-color in (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -4090,7 +4090,7 @@ body {
 			}
 		}
 
-		@each $btn-name, $btn-color in   (primary, $primary-color),
+		@each $btn-name, $btn-color in   (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -4433,7 +4433,7 @@ body {
 					background-color: $white;
 					.sidebar-user {
 						h6{
-							color: $primary-color;
+							color: $success-color;
 						}
 						p{
 							color: 	$theme-body-font-color
@@ -4444,7 +4444,7 @@ body {
 							> a {
 								color: $theme-body-font-color;
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -4453,13 +4453,13 @@ body {
 								> a{
 									color: $theme-body-font-color;
 									&:hover,&.active{
-										color: $primary-color;
+										color: $success-color;
 									}
 								}
 								&.active {
 									> a{
 										&.active{
-											color: $primary-color;
+											color: $success-color;
 										}
 									}
 								}
@@ -4739,18 +4739,18 @@ body {
 								th {
 									border-bottom: 2px solid $dark-border-color;
 								}
-								.border-bottom-primary {
+								.border-bottom-success {
 									th{
-										border-bottom: 1px solid $primary-color;
+										border-bottom: 1px solid $success-color;
 									}
 								}
 							}
-							.table-primary, .table-secondary, .table-success, .table-info, .table-warning, .table-light, .table-danger {
+							.table-success, .table-secondary, .table-success, .table-info, .table-warning, .table-light, .table-danger {
 								th, td {
 									color: $theme-body-font-color;
 								}
 							}
-							.bg-primary, .bg-secondary, .bg-success, .bg-info, .bg-warning, .bg-danger {
+							.bg-success, .bg-secondary, .bg-success, .bg-info, .bg-warning, .bg-danger {
 								color: $white;
 							}
 							.bg-light {
@@ -4762,9 +4762,9 @@ body {
 								}
 							}
 							tbody {
-								.border-bottom-primary{
+								.border-bottom-success{
 									th, td{
-										border-bottom: 1px solid $primary-color;
+										border-bottom: 1px solid $success-color;
 									}
 								}
 							}
@@ -4848,7 +4848,7 @@ body {
 							input {
 								&:checked {
 									+ .switch-state {
-										background-color: $primary-color;
+										background-color: $success-color;
 									}
 								}
 							}
@@ -5078,7 +5078,7 @@ body {
 									color: $dark-all-font-color !important;
 									&.current,
 									&:active{
-										border-color: $primary-color;
+										border-color: $success-color;
 									}
 								}
 								.paginate_button.disabled {
@@ -5159,7 +5159,7 @@ body {
 						}
 						.page-item.active {
 							.page-link {
-								background-color: $primary-color;
+								background-color: $success-color;
 							}
 						}
 						.ecommerce-widget {
@@ -5207,7 +5207,7 @@ body {
 								&.active,
 								&:focus,
 								&:hover{
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -5217,7 +5217,7 @@ body {
 									background-color: $dark-border-color;
 									&.br-active,
 									&.br-selected{
-										background-color: $primary-color;
+										background-color: $success-color;
 									}
 								}
 							}
@@ -5230,8 +5230,8 @@ body {
 									color: $dark-all-font-color;
 									&.br-active,
 									&.br-selected{
-										border: 2px solid $primary-color;
-										color: $primary-color;
+										border: 2px solid $success-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -5245,7 +5245,7 @@ body {
 									&.br-selected,
 									&.br-active{
 										&:after{
-											color: $primary-color;
+											color: $success-color;
 										}
 									}
 								}
@@ -5302,7 +5302,7 @@ body {
 						background-color: $dark-body-background;
 					}
 					.form-builder {
-						.nav-primary {
+						.nav-success {
 							.show {
 								> .nav-link {
 									color: $white;
@@ -5314,7 +5314,7 @@ body {
 									color: $white;
 								}
 							}
-							.nav-pills.nav-primary {
+							.nav-pills.nav-success {
 								.show {
 									> .nav-link {
 										color: $white;
@@ -5436,7 +5436,7 @@ body {
 							a {
 								color: $dark-all-font-color;
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -5456,7 +5456,7 @@ body {
 							button{
 								&:hover
 								{
-									color: $primary-color!important;
+									color: $success-color!important;
 								}
 							}
 						}
@@ -5468,9 +5468,9 @@ body {
 									color: $dark-all-font-color;
 								}
 								&:hover{
-									color: $primary-color;
+									color: $success-color;
 									a{
-										color: $primary-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -5492,7 +5492,7 @@ body {
 										&:hover{
 											svg{
 												path, line, polyline, polygon, rect{
-													color: $primary-color !important;
+													color: $success-color !important;
 												}
 											}
 										}
@@ -5694,13 +5694,13 @@ body {
 												.form {
 													input {
 														border: none !important;
-														border-bottom: 1px solid $primary-color !important;
+														border-bottom: 1px solid $success-color !important;
 													}
 												}
 												a {
 													color: $dark-all-font-color;
 													&:hover {
-														color: $primary-color;
+														color: $success-color;
 													}
 												}
 											}
@@ -5981,7 +5981,7 @@ body {
 						}
 					}
 					.card-absolute{
-						.bg-primary, .bg-secondary{
+						.bg-success, .bg-secondary{
 							h5{
 								color: $white;
 							}
@@ -6182,8 +6182,8 @@ body {
 					border-top-width: 0;
 				}
 				&.active {
-					background-color: $primary-color;
-					border-color: $primary-color;
+					background-color: $success-color;
+					border-color: $success-color;
 					color: $white;
 				}
 				&:hover,
@@ -6205,7 +6205,7 @@ body {
 					border-radius: 0;
 				}
 			}
-			.list-group-item-primary {
+			.list-group-item-success {
 				color: #004085;
 				background-color: #b8daff;
 			}
@@ -6455,11 +6455,11 @@ body {
 							&:focus,
 							&:active,
 							&.highlighted{
-								color: $primary-color;
+								color: $success-color;
 							}
 							&.current{
 								background-color: $dark-body-background;
-								color: $primary-color;
+								color: $success-color;
 							}
 						}
 					}
@@ -6486,7 +6486,7 @@ body {
 					div{
 						a{
 							&:hover{
-								color: $primary-color;
+								color: $success-color;
 							}
 						}
 					}
@@ -6504,10 +6504,10 @@ body {
 						color: $dark-small-font-color !important;
 					}
 				}
-				.bg-primary{
+				.bg-success{
 					.btn-link{
-						background-color: $primary-color;
-						border: 1px solid $primary-color;
+						background-color: $success-color;
+						border: 1px solid $success-color;
 					}
 				}
 				.bg-secondary{
@@ -6642,7 +6642,7 @@ body {
 					&.current {
 						background-color: $dark-card-background;
 						a {
-							color: $primary-color;
+							color: $success-color;
 						}
 					}
 				}
@@ -6915,9 +6915,9 @@ body {
 			border: 1px solid $dark-border-color;
 		}
 		.select2-drpdwn {
-			.form-control-primary {
-				border-color: $primary-color !important;
-				color: $primary-color !important;
+			.form-control-success {
+				border-color: $success-color !important;
+				color: $success-color !important;
 			}
 			.form-control-secondary {
 				border-color: $secondary-color !important;
@@ -6943,8 +6943,8 @@ body {
 				border-color: $white !important;
 				color: $white !important;
 			}
-			.form-control-primary-fill{
-				background-color: $primary-color !important;
+			.form-control-success-fill{
+				background-color: $success-color !important;
 				color: $white !important;
 			}
 			.form-control-secondary-fill{
@@ -7062,7 +7062,7 @@ body {
 			background: $dark-border-color;
 			&.active,
 			&.current{
-				background: $primary-color;
+				background: $success-color;
 				color: $white;
 			}
 		}
@@ -7161,12 +7161,12 @@ body {
 			.nav-link{
 				color: $dark-all-font-color;
 				&.active{
-					color: $primary-color;
+					color: $success-color;
 				}
 			}
 			.show {
 				> .nav-link{
-					color: $primary-color;
+					color: $success-color;
 				}
 			}
 		}
@@ -7358,7 +7358,7 @@ body {
 						&.completed{
 							.task-container{
 								.task-label{
-									color: $primary-color;
+									color: $success-color;
 								}
 								.complete-btn{
 									&:hover{
@@ -7580,14 +7580,14 @@ body {
 			span{
 				+ span{
 					+ span{
-						border: 1px solid $primary-color;
+						border: 1px solid $success-color;
 						background-color: $dark-body-background;
 						border-radius: 4px;
 					}
 				}
 			}
 			i{
-				background-color: $primary-color;
+				background-color: $success-color;
 				color: $white;
 				padding: 20px;
 				margin-right: 20px !important;
@@ -7772,7 +7772,7 @@ body {
 				}
 			}
 		}
-		@each $btn-name, $btn-color in (primary, $primary-color),
+		@each $btn-name, $btn-color in (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -7805,7 +7805,7 @@ body {
 			}
 		}
 
-		@each $btn-name, $btn-color in (primary, $primary-color),
+		@each $btn-name, $btn-color in (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -7823,7 +7823,7 @@ body {
 			}
 		}
 
-		@each $btn-name, $btn-color in   (primary, $primary-color),
+		@each $btn-name, $btn-color in   (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -8216,10 +8216,10 @@ body {
 										}
 									}
 									&:hover {
-										color: $primary-color;
+										color: $success-color;
 										svg {
 											line, path, circle {
-												color: $primary-color !important;
+												color: $success-color !important;
 											}
 										}
 									}
@@ -8337,7 +8337,7 @@ body {
 		}
 		.page-body-wrapper{
 			.page-body{
-				color: #313131;
+				color: #232526;
 			}
 		}
 	}
@@ -8396,7 +8396,7 @@ body {
 					&.current {
 						background-color: $dark-card-background;
 						a {
-							color: $primary-color;
+							color: $success-color;
 						}
 					}
 				}
@@ -8718,7 +8718,7 @@ body {
 					}
 					.sidebar-menu {
 						.sidebar-title {
-							color: $primary-color;
+							color: $success-color;
 							border-bottom: 1px solid rgba(241, 241, 241, 0.35);
 						}
 						>
@@ -8726,10 +8726,10 @@ body {
 							> a {
 								color: $dark-all-font-color;
 								&.active {
-									color: $primary-color;
+									color: $success-color;
 								}
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 							.label {
@@ -8755,10 +8755,10 @@ body {
 								> a {
 									color: $sidebar-submenu-font-color;
 									&:hover {
-										color: $primary-color;
+										color: $success-color;
 									}
 									&.active {
-										color: $primary-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -9031,18 +9031,18 @@ body {
 								th {
 									border-bottom: 2px solid $dark-border-color;
 								}
-								.border-bottom-primary {
+								.border-bottom-success {
 									th{
-										border-bottom: 1px solid $primary-color;
+										border-bottom: 1px solid $success-color;
 									}
 								}
 							}
-							.table-primary, .table-secondary, .table-success, .table-info, .table-warning, .table-light, .table-danger {
+							.table-success, .table-secondary, .table-success, .table-info, .table-warning, .table-light, .table-danger {
 								th, td {
 									color: $theme-body-font-color;
 								}
 							}
-							.bg-primary, .bg-secondary, .bg-success, .bg-info, .bg-warning, .bg-danger {
+							.bg-success, .bg-secondary, .bg-success, .bg-info, .bg-warning, .bg-danger {
 								color: $white;
 							}
 							.bg-light {
@@ -9054,9 +9054,9 @@ body {
 								}
 							}
 							tbody {
-								.border-bottom-primary{
+								.border-bottom-success{
 									th, td{
-										border-bottom: 1px solid $primary-color;
+										border-bottom: 1px solid $success-color;
 									}
 								}
 							}
@@ -9140,7 +9140,7 @@ body {
 							input {
 								&:checked {
 									+ .switch-state {
-										background-color: $primary-color;
+										background-color: $success-color;
 									}
 								}
 							}
@@ -9369,7 +9369,7 @@ body {
 									color: $dark-all-font-color !important;
 									&.current,
 									&:active{
-										border-color: $primary-color;
+										border-color: $success-color;
 									}
 								}
 								.paginate_button.disabled {
@@ -9450,7 +9450,7 @@ body {
 						}
 						.page-item.active {
 							.page-link {
-								background-color: $primary-color;
+								background-color: $success-color;
 							}
 						}
 						.ecommerce-widget {
@@ -9498,7 +9498,7 @@ body {
 								&.active,
 								&:focus,
 								&:hover{
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -9508,7 +9508,7 @@ body {
 									background-color: $dark-border-color;
 									&.br-active,
 									&.br-selected{
-										background-color: $primary-color;
+										background-color: $success-color;
 									}
 								}
 							}
@@ -9521,8 +9521,8 @@ body {
 									color: $dark-all-font-color;
 									&.br-active,
 									&.br-selected{
-										border: 2px solid $primary-color;
-										color: $primary-color;
+										border: 2px solid $success-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -9536,7 +9536,7 @@ body {
 									&.br-selected,
 									&.br-active{
 										&:after{
-											color: $primary-color;
+											color: $success-color;
 										}
 									}
 								}
@@ -9593,7 +9593,7 @@ body {
 						background-color: $dark-body-background;
 					}
 					.form-builder {
-						.nav-primary {
+						.nav-success {
 							.show {
 								> .nav-link {
 									color: $white;
@@ -9605,7 +9605,7 @@ body {
 									color: $white;
 								}
 							}
-							.nav-pills.nav-primary {
+							.nav-pills.nav-success {
 								.show {
 									> .nav-link {
 										color: $white;
@@ -9727,7 +9727,7 @@ body {
 							a {
 								color: $dark-all-font-color;
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 								}
 							}
 						}
@@ -9746,7 +9746,7 @@ body {
 						li {
 							button {
 								&:hover {
-									color: $primary-color !important;
+									color: $success-color !important;
 								}
 							}
 						}
@@ -9758,9 +9758,9 @@ body {
 									color: $dark-all-font-color;
 								}
 								&:hover {
-									color: $primary-color;
+									color: $success-color;
 									a {
-										color: $primary-color;
+										color: $success-color;
 									}
 								}
 							}
@@ -9782,7 +9782,7 @@ body {
 										&:hover{
 											svg{
 												path, line, polyline, polygon, rect{
-													color: $primary-color !important;
+													color: $success-color !important;
 												}
 											}
 										}
@@ -9984,13 +9984,13 @@ body {
 												.form {
 													input {
 														border: none !important;
-														border-bottom: 1px solid $primary-color !important;
+														border-bottom: 1px solid $success-color !important;
 													}
 												}
 												a {
 													color: $dark-all-font-color;
 													&:hover {
-														color: $primary-color;
+														color: $success-color;
 													}
 												}
 											}
@@ -10271,7 +10271,7 @@ body {
 						}
 					}
 					.card-absolute {
-						.bg-primary, .bg-secondary {
+						.bg-success, .bg-secondary {
 							h5 {
 								color: $white;
 							}
@@ -10463,8 +10463,8 @@ body {
 					border-top-width: 0;
 				}
 				&.active {
-					background-color: $primary-color;
-					border-color: $primary-color;
+					background-color: $success-color;
+					border-color: $success-color;
 					color: $white;
 				}
 				&:hover,
@@ -10486,7 +10486,7 @@ body {
 					border-radius: 0;
 				}
 			}
-			.list-group-item-primary {
+			.list-group-item-success {
 				color: #004085;
 				background-color: #b8daff;
 			}
@@ -10711,10 +10711,10 @@ body {
 						color: $dark-small-font-color !important;
 					}
 				}
-				.bg-primary {
+				.bg-success {
 					.btn-link {
-						background-color: $primary-color;
-						border: 1px solid $primary-color;
+						background-color: $success-color;
+						border: 1px solid $success-color;
 					}
 				}
 				.bg-secondary {
@@ -10881,9 +10881,9 @@ body {
 			border: 1px solid $dark-border-color;
 		}
 		.select2-drpdwn {
-			.form-control-primary {
-				border-color: $primary-color !important;
-				color: $primary-color !important;
+			.form-control-success {
+				border-color: $success-color !important;
+				color: $success-color !important;
 			}
 			.form-control-secondary {
 				border-color: $secondary-color !important;
@@ -10909,8 +10909,8 @@ body {
 				border-color: $white !important;
 				color: $white !important;
 			}
-			.form-control-primary-fill {
-				background-color: $primary-color !important;
+			.form-control-success-fill {
+				background-color: $success-color !important;
 				color: $white !important;
 			}
 			.form-control-secondary-fill {
@@ -11028,7 +11028,7 @@ body {
 			background: $dark-border-color;
 			&.active,
 			&.current {
-				background: $primary-color;
+				background: $success-color;
 				color: $white;
 			}
 		}
@@ -11127,12 +11127,12 @@ body {
 			.nav-link {
 				color: $dark-all-font-color;
 				&.active {
-					color: $primary-color;
+					color: $success-color;
 				}
 			}
 			.show {
 				> .nav-link {
-					color: $primary-color;
+					color: $success-color;
 				}
 			}
 		}
@@ -11324,7 +11324,7 @@ body {
 						&.completed {
 							.task-container {
 								.task-label {
-									color: $primary-color;
+									color: $success-color;
 								}
 								.complete-btn {
 									&:hover {
@@ -11546,14 +11546,14 @@ body {
 			span{
 				+ span{
 					+ span{
-						border: 1px solid $primary-color;
+						border: 1px solid $success-color;
 						background-color: $dark-body-background;
 						border-radius: 4px;
 					}
 				}
 			}
 			i{
-				background-color: $primary-color;
+				background-color: $success-color;
 				color: $white;
 				padding: 20px;
 				margin-right: 20px !important;
@@ -11738,7 +11738,7 @@ body {
 				}
 			}
 		}
-		@each $btn-name, $btn-color in (primary, $primary-color),
+		@each $btn-name, $btn-color in (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -11771,7 +11771,7 @@ body {
 			}
 		}
 
-		@each $btn-name, $btn-color in (primary, $primary-color),
+		@each $btn-name, $btn-color in (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),
@@ -11789,7 +11789,7 @@ body {
 			}
 		}
 
-		@each $btn-name, $btn-color in   (primary, $primary-color),
+		@each $btn-name, $btn-color in   (success, $success-color),
 						(secondary, $secondary-color) ,
 						(success, $success-color),
 						(danger, $danger-color),

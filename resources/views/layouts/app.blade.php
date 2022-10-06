@@ -13,6 +13,7 @@
         <title>@yield('title') | FICHEPARTENAIRE</title>
         <!-- Google font-->
         @include('livewire.dashboard.partials.style')
+
         @livewireStyles()
     </head>
     <body main-theme-layout="ltr">
@@ -47,7 +48,7 @@
                                     </div>
                                 </div>
                                 <!-- Bookmark Start-->
-                                <div class="col">
+                                {{-- <div class="col">
                                     <div class="bookmark pull-right">
                                         <ul>
                                             <li><a href="#" data-bs-toggle="tooltip" title="Calender" data-bs-original-title="Calendar"><i data-feather="calendar"></i></a></li>
@@ -63,7 +64,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- Bookmark Ends-->
                             </div>
                         </div>

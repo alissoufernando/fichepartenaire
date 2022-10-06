@@ -12,12 +12,12 @@
       width: 60px;
       height: 8px;
       float: left;
-      background-color: lighten($primary-color, 25%);
+      background-color: lighten($success-color, 25%);
       margin: 1px;
 
       &.br-active,
       &.br-selected {
-        background-color: $primary-color;
+        background-color: $success-color;
       }
     }
 
@@ -28,7 +28,7 @@
       font-weight: 600;
       display: block;
       padding: .5em 0;
-      color: $primary-color;
+      color: $success-color;
       font-weight: 400;
     }
   }
@@ -38,12 +38,12 @@
       cursor: default;
 
       &.br-active, &.br-selected {
-        background-color: lighten($primary-color, 10%);
+        background-color: lighten($success-color, 10%);
       }
     }
 
     .br-current-rating {
-      color: lighten($primary-color, 10%);
+      color: lighten($success-color, 10%);
     }
   }
 

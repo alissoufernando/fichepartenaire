@@ -215,11 +215,11 @@
     .btn {
       font-size: 18px;
       font-weight: 600;
-      color: $primary-color;
+      color: $success-color;
       &.btn-link {
         color: $black;
         &.collapsed {
-          color: $primary-color;
+          color: $success-color;
         }
       }
     }
@@ -241,11 +241,11 @@
             margin-top: 3px;
             text-decoration: none;
             line-height: 25px;
-            color: $primary-color;
+            color: $success-color;
             margin-right: 20px;
           }
           &.active {
-            color: $primary-color;
+            color: $success-color;
             background-color: unset;
             border: unset;
           }

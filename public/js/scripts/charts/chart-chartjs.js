@@ -23,7 +23,7 @@ $(window).on('load', function () {
     lineAreaChartEx = $('.line-area-chart-ex');
 
   // Color Variables
-  var primaryColorShade = '#836AF9',
+  var successColorShade = '#836AF9',
     yellowColor = '#ffe800',
     successColorShade = '#28dac6',
     warningColorShade = '#ffe802',
@@ -34,7 +34,7 @@ $(window).on('load', function () {
     blueLightColor = '#84D0FF',
     greyLightColor = '#EDF1F4',
     tooltipShadow = 'rgba(0, 0, 0, 0.25)',
-    lineChartPrimary = '#666ee8',
+    lineChartsuccess = '#666ee8',
     lineChartDanger = '#ff4961',
     labelColor = '#6e6b7b',
     grid_line_color = 'rgba(200, 200, 200, 0.2)'; // RGBA color helps in dark layout
@@ -450,17 +450,17 @@ $(window).on('load', function () {
           {
             data: [80, 125, 105, 130, 215, 195, 140, 160, 230, 300, 220, 170, 210, 200, 280],
             label: 'Asia',
-            borderColor: lineChartPrimary,
+            borderColor: lineChartsuccess,
             lineTension: 0.5,
             pointStyle: 'circle',
-            backgroundColor: lineChartPrimary,
+            backgroundColor: lineChartsuccess,
             fill: false,
             pointRadius: 1,
             pointHoverRadius: 5,
             pointHoverBorderWidth: 5,
             pointBorderColor: 'transparent',
             pointHoverBorderColor: window.colors.solid.white,
-            pointHoverBackgroundColor: lineChartPrimary,
+            pointHoverBackgroundColor: lineChartsuccess,
             pointShadowOffsetX: 1,
             pointShadowOffsetY: 1,
             pointShadowBlur: 5,
@@ -645,9 +645,9 @@ $(window).on('load', function () {
           {
             label: 'Population (millions)',
             backgroundColor: [
-              primaryColorShade,
+              successColorShade,
               warningColorShade,
-              window.colors.solid.primary,
+              window.colors.solid.success,
               infoColorShade,
               greyColor,
               successColorShade
@@ -720,8 +720,8 @@ $(window).on('load', function () {
         },
         datasets: [
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 20,
@@ -742,8 +742,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 10,
@@ -786,8 +786,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 30,
@@ -797,8 +797,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 40,
@@ -808,8 +808,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 90,
@@ -819,8 +819,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 50,
@@ -830,8 +830,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 60,
@@ -841,8 +841,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 70,
@@ -852,8 +852,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 80,
@@ -962,8 +962,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 100,
@@ -973,8 +973,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 110,
@@ -984,8 +984,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 120,
@@ -995,8 +995,8 @@ $(window).on('load', function () {
             ]
           },
           {
-            backgroundColor: primaryColorShade,
-            borderColor: primaryColorShade,
+            backgroundColor: successColorShade,
+            borderColor: successColorShade,
             data: [
               {
                 x: 130,
@@ -1045,7 +1045,7 @@ $(window).on('load', function () {
           {
             labels: ['Tablet', 'Mobile', 'Desktop'],
             data: [10, 10, 80],
-            backgroundColor: [successColorShade, warningLightColor, window.colors.solid.primary],
+            backgroundColor: [successColorShade, warningLightColor, window.colors.solid.success],
             borderWidth: 0,
             pointStyle: 'rectRounded'
           }
@@ -1202,7 +1202,7 @@ $(window).on('load', function () {
                 y: 330
               }
             ],
-            backgroundColor: window.colors.solid.primary,
+            backgroundColor: window.colors.solid.success,
             borderColor: 'transparent',
             pointBorderWidth: 2,
             pointHoverBorderWidth: 2,

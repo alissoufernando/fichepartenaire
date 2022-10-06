@@ -249,7 +249,7 @@ $i:10;
 
 /*======= Text css starts ===========*/
 $text-name:
-        primary,
+        success,
         secondary,
         success,
         danger,
@@ -257,7 +257,7 @@ $text-name:
         light,
         dark,
         warning;
-$text-color : $primary-color,
+$text-color : $success-color,
 $secondary-color,
 $success-color,
 $danger-color,
@@ -286,7 +286,7 @@ $warning-color;
 }
 
 $label-name:theme,
-primary,
+success,
 secondary,
 success,
 danger,
@@ -294,8 +294,8 @@ info,
 light,
 dark,
 warning;
-$label-color: $primary-color,
-$primary-color,
+$label-color: $success-color,
+$success-color,
 $secondary-color,
 $success-color,
 $danger-color,
@@ -317,7 +317,7 @@ $warning-color;
 /*======= Badge-color css starts  ======= */
 
 $badge-name:
-        primary,
+        success,
         secondary,
         success,
         danger,
@@ -326,7 +326,7 @@ $badge-name:
         dark,
         warning;
 $badge-color:
-        $primary-color,
+        $success-color,
         $secondary-color,
         $success-color,
         $danger-color,
@@ -348,7 +348,7 @@ $badge-color:
 /*======= Background-color css starts  ======= */
 
 $background-name:
-        primary,
+        success,
         secondary,
         success,
         danger,
@@ -357,7 +357,7 @@ $background-name:
         dark,
         warning;
 $background-color:
-        $primary-color,
+        $success-color,
         $secondary-color,
         $success-color,
         $danger-color,
@@ -378,7 +378,7 @@ $background-color:
 
 /*======= Font-color css starts  ======= */
 
-$text-name:primary,
+$text-name:success,
 secondary,
 success,
 danger,
@@ -390,7 +390,7 @@ google-plus,
 twitter,
 linkedin,
 fb;
-$label-color:$primary-color,
+$label-color:$success-color,
 $secondary-color,
 $success-color,
 $danger-color,
@@ -417,7 +417,7 @@ $fb;
 
 /*======= Button-color css starts  ======= */
 // btn--color//
-@each $btn-name, $btn-color in  (primary, $primary-color),
+@each $btn-name, $btn-color in  (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -452,7 +452,7 @@ $fb;
   }
 }
 /*======= Button-color css ends  ======= */
-@each $btn-name, $btn-color in  (primary, $primary-color),
+@each $btn-name, $btn-color in  (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -475,7 +475,7 @@ $fb;
 }
 
 // outline buttons//
-@each $btn-name, $btn-color in  (primary, $primary-color),
+@each $btn-name, $btn-color in  (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -503,7 +503,7 @@ $fb;
 
 //active button css //
 
-@each $btn-name, $btn-color in  (primary, $primary-color),
+@each $btn-name, $btn-color in  (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -525,7 +525,7 @@ $fb;
 
 //* active button css end *//
 
-@each $btn-name, $btn-color in  (primary, $primary-color),
+@each $btn-name, $btn-color in  (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -550,7 +550,7 @@ $fb;
 
 /*======= Table-Border-Bottom-color css starts  ======= */
 
-$border-name:primary,
+$border-name:success,
 secondary,
 success,
 danger,
@@ -558,7 +558,7 @@ info,
 light,
 dark,
 warning;
-$border-color:$primary-color,
+$border-color:$success-color,
 $secondary-color,
 $success-color,
 $danger-color,
@@ -582,7 +582,7 @@ $warning-color;
 /*======= Table styling css starts  ======= */
 
 $table-name:
-        primary,
+        success,
         secondary,
         success,
         danger,
@@ -590,7 +590,7 @@ $table-name:
         light,
         dark,
         warning;
-$table-color:$primary-color,
+$table-color:$success-color,
 $secondary-color,
 $success-color,
 $danger-color,
@@ -623,7 +623,7 @@ $warning-color;
 
 /*======= All-Borders-color css starts  ======= */
 
-$b-name:primary,
+$b-name:success,
 secondary,
 success,
 danger,
@@ -631,7 +631,7 @@ info,
 light,
 dark,
 warning;
-$b-color:$primary-color,
+$b-color:$success-color,
 $secondary-color,
 $success-color,
 $danger-color,
@@ -699,7 +699,7 @@ $i:1;
     transition: .3s;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: rgba($primary-color, 0.20);
+    background-color: rgba($success-color, 0.20);
   }
 }
 
@@ -750,7 +750,7 @@ $i:1;
     margin: 0 8px 8px 0;
     transition: all 0.3s ease;
     &:hover{
-      background-color: $primary-color;
+      background-color: $success-color;
       color: $white;
       transition: all 0.3s ease;
     }
@@ -789,13 +789,13 @@ $i:1;
     & td {
           &.active,
           &.active:hover {
-              background-color: $primary-color;
+              background-color: $success-color;
               color: $white;
           }
 
           span {
               &.active {
-                  background-color: $primary-color;
+                  background-color: $success-color;
               }
           }
       }
@@ -803,11 +803,11 @@ $i:1;
   tr {
     th,td {
         &:active, &.active {
-            background-color: $primary-color;
+            background-color: $success-color;
         }
         span {
             &:active, &.active {
-                background-color: $primary-color;
+                background-color: $success-color;
             }
         }
     }
@@ -817,10 +817,10 @@ $i:1;
   .dz-preview {
     .dz-error-message {
       background: $white !important;
-      color: $primary-color !important;
-      border: 1px solid $primary-color;
+      color: $success-color !important;
+      border: 1px solid $success-color;
       &:after{
-        border-bottom: 6px solid $primary-color !important;
+        border-bottom: 6px solid $success-color !important;
       }
     }
   }
@@ -852,10 +852,10 @@ $i:1;
    z-index: 99;
 }
 .irs-from, .irs-to, .irs-single{
-  background: $primary-color;
+  background: $success-color;
 }
 .irs-line-mid, .irs-line-left, .irs-line-right, .irs-bar, .irs-bar-edge {
-  background-color: $primary-color;
+  background-color: $success-color;
 }
 /**=====================
      02. Generic CSS Ends

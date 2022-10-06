@@ -53,7 +53,7 @@
         margin: 0;
         .column {
           height: 10px;
-          background: $primary-color;
+          background: $success-color;
           padding: 0;
           border-left: 3px solid $white;
         }
@@ -95,7 +95,7 @@
           padding: 5px;
           &:hover {
             cursor: pointer;
-            color: $primary-color!important;
+            color: $success-color!important;
           }
         }
         .ge-details {

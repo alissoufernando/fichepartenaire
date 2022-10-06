@@ -41,7 +41,7 @@ var BootstrapNotifyDemo = function () {
             if ($('#bootstrap-notify-progress').prop('checked')) {
                 setTimeout(function() {
                     notify.update('message', '<strong>Saving</strong> Page Data.');
-                    notify.update('type', 'primary');
+                    notify.update('type', 'success');
                     notify.update('progress', 20);
                 }, 1000);
                 setTimeout(function() {

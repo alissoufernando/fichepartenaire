@@ -103,9 +103,9 @@
       }
       &.current {
         background-color: $white;
-        border-bottom: 2px solid $primary-color;
+        border-bottom: 2px solid $success-color;
         a {
-          color: $primary-color;
+          color: $success-color;
         }
       }
     }
@@ -130,7 +130,7 @@
 .select2-drpdwn-project{
   select{
     padding-top: 0;
-    border-bottom: 1px solid $primary-color !important;
+    border-bottom: 1px solid $success-color !important;
     border: none;
     border-radius: 0 !important;
     height: 24px;

@@ -58,7 +58,7 @@
 	min-height: 300px;
 	margin: 15px;
 	border-radius: 5px;
-	background-color: lighten($primary-color,20%);
+	background-color: lighten($success-color,20%);
 	transition: transform .15s;
 	z-index: 1;
 	@extend .noflick;

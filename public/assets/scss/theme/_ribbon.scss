@@ -153,7 +153,7 @@
     border-bottom: 10px solid transparent;
   }
 }
-@each $ribbon-name, $ribbon-color in (primary, $primary-color),
+@each $ribbon-name, $ribbon-color in (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),

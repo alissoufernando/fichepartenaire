@@ -1,8 +1,8 @@
 var doughnutData = [
     {
         value: 300,
-        color: endlessAdminConfig.primary,
-        highlight: endlessAdminConfig.primary,
+        color: endlessAdminConfig.success,
+        highlight: endlessAdminConfig.success,
         label: "Frontend"
     },
     {
@@ -76,7 +76,7 @@ var morris_chart = {
                 xkey: "x",
                 ykeys: ["y", "z"],
                 labels: ["Y", "Z"],
-                barColors: [endlessAdminConfig.primary ,endlessAdminConfig.secondary , "#4466f2" ,"#1ea6ec"],
+                barColors: [endlessAdminConfig.success ,endlessAdminConfig.secondary , "#2a8c28" ,"#1ea6ec"],
                 stacked: !0
             });
         });
@@ -126,7 +126,7 @@ lineArea1.on('created', function (data) {
         y2: 1
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -172,7 +172,7 @@ lineArea2.on('created', function (data) {
         y2: 1
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -218,7 +218,7 @@ lineArea3.on('created', function (data) {
         y2: 1
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -263,7 +263,7 @@ lineArea4.on('created', function (data) {
         y2: 1
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -308,7 +308,7 @@ lineArea5.on('created', function (data) {
         y2: 1
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -353,7 +353,7 @@ lineArea6.on('created', function (data) {
         y2: 1
     }).elem('stop', {
         offset: 0,
-        'stop-color': endlessAdminConfig.primary
+        'stop-color': endlessAdminConfig.success
     }).parent().elem('stop', {
         offset: 1,
         'stop-color': endlessAdminConfig.secondary
@@ -388,23 +388,23 @@ $(function() {
                 show: true
             }
         },
-        colors: ["#4466f2", "#1ea6ec" ,"#22af47" ,"#007bff" ,"#FF5370", "#22af47" ,"#ff9f40"]
+        colors: ["#2a8c28", "#1ea6ec" ,"#22af47" ,"#007bff" ,"#FF5370", "#22af47" ,"#ff9f40"]
     });
 });
 
 $(".bar-colours-1").peity("bar", {
-    fill: [endlessAdminConfig.primary, endlessAdminConfig.secondary, "#22af47"],
+    fill: [endlessAdminConfig.success, endlessAdminConfig.secondary, "#22af47"],
     width: '500',
     height: '50'
 })
 $(".bar-colours-2").peity("bar", {
-    fill: [endlessAdminConfig.primary, endlessAdminConfig.secondary, "#22af47"],
+    fill: [endlessAdminConfig.success, endlessAdminConfig.secondary, "#22af47"],
     width: '500',
     height: '50'
 })
 
 $(".bar-colours-3").peity("bar", {
-    fill: [endlessAdminConfig.primary, endlessAdminConfig.secondary, "#22af47"],
+    fill: [endlessAdminConfig.success, endlessAdminConfig.secondary, "#22af47"],
     width: '500',
     height: '50'
 })

@@ -24,7 +24,7 @@
         z-index: 1;
         width: 0.75rem;
         height: 0.375rem;
-        border: 2px solid $primary-color;
+        border: 2px solid $success-color;
         border-top-style: none;
         border-right-style: none;
     }
@@ -57,7 +57,7 @@
         z-index: 1;
         width: 0.75rem;
         height: 0.75rem;
-        background: $primary-color;
+        background: $success-color;
         border-radius: 50%;
     }
     &:after {
@@ -173,7 +173,7 @@
         margin-top: 0;
     }
 }
-@each $btn-name, $btn-color in (primary, $primary-color),
+@each $btn-name, $btn-color in (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -199,7 +199,7 @@
         }
     }
 }
-@each $btn-name, $btn-color in   (primary, $primary-color),
+@each $btn-name, $btn-color in   (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -233,7 +233,7 @@
     }
 
 }
-@each $btn-name, $btn-color in (primary, $primary-color),
+@each $btn-name, $btn-color in (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),
@@ -338,7 +338,7 @@
     }
 }
 
-@each $btn-name, $btn-color in (primary, $primary-color),
+@each $btn-name, $btn-color in (success, $success-color),
         (secondary, $secondary-color) ,
         (success, $success-color),
         (danger, $danger-color),

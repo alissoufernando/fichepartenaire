@@ -79,8 +79,8 @@ function setColor(){
         $("#borderBottomColor").val("DBDBDB");
     }
     
-    // Primary button style
-    if(btnSelector == ".btn.btn-primary" || btnSelector == ".btn.btn-primary.disabled"){
+    // success button style
+    if(btnSelector == ".btn.btn-success" || btnSelector == ".btn.btn-success.disabled"){
         $("#textColor").val("ffffff");
         $("#bgColor").val("428BCA");
         $("#topColor").val("428BCA");
@@ -89,7 +89,7 @@ function setColor(){
         $("#borderHrColor").val("2B669A");
         $("#borderBottomColor").val("2B669A");
     }
-    if(btnSelector == ".btn.btn-primary.active"){
+    if(btnSelector == ".btn.btn-success.active"){
         $("#textColor").val("ffffff");
         $("#bgColor").val("2D6CA2");
         $("#topColor").val("2D6CA2");

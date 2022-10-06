@@ -18,7 +18,7 @@ $(function () {
     blockElement.on('click', function () {
       var block_ele = $(this);
       $(block_ele).block({
-        message: '<div class="spinner-border text-primary font-medium-3"></div>',
+        message: '<div class="spinner-border text-success font-medium-3"></div>',
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
           backgroundColor: '#fff',

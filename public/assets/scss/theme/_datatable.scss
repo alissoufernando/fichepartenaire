@@ -54,12 +54,12 @@ div{
     .paginate_button{
       margin: 0;
       &.current,&:active{
-        background: $primary-color;
+        background: $success-color;
         color: $white !important;
         box-shadow: none;
       }
       &:hover{
-        border:1px solid $primary-color;
+        border:1px solid $success-color;
         color: $dark-color !important;
         background: transparent !important;
       }
@@ -122,7 +122,7 @@ table{
   .box{
     >div{
       padding: 5px 15px;
-      background-color: $primary-color;
+      background-color: $success-color;
       display: inline-block;
       color: $white;
       border-radius: 5px;
@@ -164,7 +164,7 @@ table{
 
 .toolbar{
   padding: 5px 15px;
-  background-color: $primary-color;
+  background-color: $success-color;
   display: inline-block;
   color: $white;
   border-radius: 5px;
@@ -186,8 +186,8 @@ code{
     .page-item{
       &.active {
         .page-link {
-          background-color: $primary-color;
-          border-color: $primary-color;
+          background-color: $success-color;
+          border-color: $success-color;
           color: $white;
         }
       }
@@ -204,12 +204,12 @@ code{
       }
       .page-link{
         margin-left: 0px;
-        color: $primary-color;
+        color: $success-color;
       }
     }
     button.dt-button, div.dt-button, a.dt-button, button.dt-button:focus:not(.disabled), div.dt-button:focus:not(.disabled), a.dt-button:focus:not(.disabled), button.dt-button:active:not(.disabled), button.dt-button.active:not(.disabled), div.dt-button:active:not(.disabled), div.dt-button.active:not(.disabled), a.dt-button:active:not(.disabled), a.dt-button.active:not(.disabled){
-      background-color: $primary-color;
-      border-color:$primary-color;
+      background-color: $success-color;
+      border-color:$success-color;
       border-radius: 2px;
       color: $white;
       background-image: none;
@@ -219,29 +219,29 @@ code{
       background-color: $success-color;
       border-color:$success-color;
     }
-    button.dt-button.btn-primary, div.dt-button.btn-primary, a.dt-button.btn-primary{
-      background-color: $primary-color;
-      border-color:$primary-color;
+    button.dt-button.btn-success, div.dt-button.btn-success, a.dt-button.btn-success{
+      background-color: $success-color;
+      border-color:$success-color;
     }
     button.dt-button.btn-danger, div.dt-button.btn-danger, a.dt-button.btn-danger{
       background-color: $danger-color;
       border-color:$danger-color
     }
     table.dataTable th.focus, table.dataTable td.focus{
-      outline: 3px solid $primary-color;
+      outline: 3px solid $success-color;
     }
     table.dataTable.display tbody > tr.odd.selected > .sorting_1, table.dataTable.order-column.stripe tbody > tr.odd.selected > .sorting_1{
-      background-color: lighten($primary-color , 20%);
+      background-color: lighten($success-color , 20%);
 
     }
     table.dataTable.stripe tbody > tr.odd.selected, table.dataTable.stripe tbody > tr.odd > .selected, table.dataTable.display tbody > tr.odd.selected, table.dataTable.display tbody > tr.odd > .selected{
-      background-color: lighten($primary-color , 20%);
+      background-color: lighten($success-color , 20%);
     }
     table.dataTable.display tbody > tr.even.selected > .sorting_1, table.dataTable.order-column.stripe tbody > tr.even.selected > .sorting_1{
-      background-color: lighten($primary-color , 20%);
+      background-color: lighten($success-color , 20%);
     }
     table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected{
-      background-color: lighten($primary-color , 20%);
+      background-color: lighten($success-color , 20%);
     }
   }
 }

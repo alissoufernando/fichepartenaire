@@ -25,7 +25,7 @@
 
                         <h5 class="d-inline">Liste des utilisateurs</h5>
                         <a href="" data-bs-toggle="modal" data-bs-target="#ModalUser"
-                            class="btn  btn-primary btn-sm float-end">Ajouter</a>
+                            class="btn  btn-success btn-sm float-end">Ajouter</a>
 
                     </div>
                     <div class="card-body">

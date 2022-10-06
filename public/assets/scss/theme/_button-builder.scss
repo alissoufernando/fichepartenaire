@@ -80,14 +80,14 @@ $url_8: url(../images/button_builder/header.jpg);
     position: relative;
     z-index: 1;
     top: 3px;
-    border: 1px solid $primary-color;
+    border: 1px solid $success-color;
     border-radius: 100%;
 
     &:hover {
       background-position: 0 -16px;
     }
     &.selected {
-      background-color: $primary-color;
+      background-color: $success-color;
     }
     input[type="radio"] {
       margin: 1px;
@@ -190,7 +190,7 @@ $url_8: url(../images/button_builder/header.jpg);
     position: absolute;
     top: 133px;
     width: 75px;
-    background-color: $primary-color;
+    background-color: $success-color;
     border-radius: 5px;
     &:before{
       content: "Ok";
@@ -204,7 +204,7 @@ $url_8: url(../images/button_builder/header.jpg);
       @extend %extend-col2;
     }
     &:hover {
-      background-color:  darken($primary-color ,10%);
+      background-color:  darken($success-color ,10%);
     }
   }
   .box {
@@ -262,7 +262,7 @@ $url_8: url(../images/button_builder/header.jpg);
       margin: 0 auto !important;
     }
     a {
-      background-color: $primary-color;
+      background-color: $success-color;
       color: $white;
       font-weight: bold;
       display: inline-block;

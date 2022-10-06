@@ -409,7 +409,7 @@ $pointerHalfSize: $datepickerPointerSize / 2 - 1;
    ------------------------------------------------- */
 
 .datepicker--nav {
-  color: $primary-color;
+  color: $success-color;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -437,10 +437,10 @@ $pointerHalfSize: $datepickerPointerSize / 2 - 1;
   width: $datepickerDayCellSize;
   border-radius: 5px;
   user-select: none;
-  background: $primary-color;
+  background: $success-color;
 
   &:hover {
-    background: $primary-color;
+    background: $success-color;
   }
 
   &.-disabled- {
@@ -465,7 +465,7 @@ $pointerHalfSize: $datepickerPointerSize / 2 - 1;
 
   i {
     font-style: normal;
-    color: $primary-color;
+    color: $success-color;
     margin-left: 5px;
   }
 

@@ -51,9 +51,9 @@
   .form-select{
     border-radius: 5px;
   }
-  .form-control-primary {
-    border-color: $primary-color;
-    color: $primary-color;
+  .form-control-success {
+    border-color: $success-color;
+    color: $success-color;
   }
   .form-control-secondary {
     border-color: $secondary-color;
@@ -84,8 +84,8 @@
     border-color: $dark-color;
     color: $dark-color;
   }
-  .form-control-primary-fill {
-    background-color: $primary-color;
+  .form-control-success-fill {
+    background-color: $success-color;
     color: $white;
   }
   .form-control-secondary-fill {
@@ -139,8 +139,8 @@ $color_cape_cod_approx: #424242;
     .select2-selection__choice {
       padding: 2px 6px !important;
       margin-top: 0 !important;
-      background-color: $primary-color !important;
-      border-color: darken($primary-color , 10%) !important;
+      background-color: $success-color !important;
+      border-color: darken($success-color , 10%) !important;
       color: $white;
       margin-right: 8px !important;
     }
@@ -155,7 +155,7 @@ $color_cape_cod_approx: #424242;
     color: $color_cape_cod_approx !important;
   }
   .select2-results__options .select2-results__option[aria-selected=true] {
-    background-color: $primary-color !important;
+    background-color: $success-color !important;
     color: $white !important;
   }
 }
@@ -170,8 +170,8 @@ $color_cape_cod_approx: #424242;
     .select2-selection__choice {
       padding: 2px 6px !important;
       margin-top: 0 !important;
-      background-color: $primary-color !important;
-      border-color: darken($primary-color , 10%) !important;
+      background-color: $success-color !important;
+      border-color: darken($success-color , 10%) !important;
       color: $white;
       margin-right: 8px !important;
     }
@@ -186,7 +186,7 @@ $color_cape_cod_approx: #424242;
     color: $color_cape_cod_approx !important;
   }
   .select2-results__options .select2-results__option[aria-selected=true] {
-    background-color: $primary-color !important;
+    background-color: $success-color !important;
     color: $white !important;
   }
 }

@@ -1,4 +1,4 @@
-var primary = localStorage.getItem("primary") || 'rgba(74, 75, 243, 1)';
+var success = localStorage.getItem("success") || 'rgba(74, 75, 243, 1)';
 var secondary = localStorage.getItem("secondary") || 'rgba(56, 184, 242, 1)';
 
 new Chartist.Line('.animate-curve', {
@@ -134,8 +134,8 @@ var myLineChart = {
     labels: ["","1000", "2000", "3000", "4000", "5000", "6000"],
     datasets: [{
         fillColor: "rgba(68, 102, 242,0.1)",
-        strokeColor: primary,
-        pointColor: primary,
+        strokeColor: success,
+        pointColor: success,
         data: [20, 25, 22, 25, 35, 30, 38, 35, 20],
     }],
 }

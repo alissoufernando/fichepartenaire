@@ -13,11 +13,11 @@
   .copy-btn{
     padding: 8px;
   }
-  .nav-primary {
-    .nav-link.active, .nav-primary .show > .nav-link, .nav-pills.nav-primary .nav-link.active, .nav-pills.nav-primary .show > .nav-link{
+  .nav-success {
+    .nav-link.active, .nav-success .show > .nav-link, .nav-pills.nav-success .nav-link.active, .nav-pills.nav-success .show > .nav-link{
       border-radius: 4px;
     }
-    .nav-link, .nav-pills.nav-primary .nav-link {
+    .nav-link, .nav-pills.nav-success .nav-link {
       color: $black;
       font-weight: 500;
     }

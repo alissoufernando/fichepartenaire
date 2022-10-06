@@ -103,7 +103,7 @@ $(window).on('load', function () {
         shade: 'dark',
         type: 'horizontal',
         shadeIntensity: 0.5,
-        gradientToColors: [window.colors.solid.primary],
+        gradientToColors: [window.colors.solid.success],
         inverseColors: true,
         opacityFrom: 1,
         opacityTo: 1,
@@ -136,7 +136,7 @@ $(window).on('load', function () {
     colors: [
       $avgSessionStrokeColor2,
       $avgSessionStrokeColor2,
-      window.colors.solid.primary,
+      window.colors.solid.success,
       $avgSessionStrokeColor2,
       $avgSessionStrokeColor2,
       $avgSessionStrokeColor2
@@ -187,7 +187,7 @@ $(window).on('load', function () {
       },
       distributed: true
     },
-    colors: [window.colors.solid.primary, window.colors.solid.warning],
+    colors: [window.colors.solid.success, window.colors.solid.warning],
     series: [
       {
         name: 'Earning',
@@ -255,7 +255,7 @@ $(window).on('load', function () {
       dashArray: [0, 5],
       width: [2]
     },
-    colors: [window.colors.solid.primary, $budgetStrokeColor2],
+    colors: [window.colors.solid.success, $budgetStrokeColor2],
     series: [
       {
         data: [61, 48, 69, 52, 60, 40, 79, 60, 59, 43, 62]
@@ -366,7 +366,7 @@ $(window).on('load', function () {
       gradient: {
         shade: 'dark',
         inverseColors: false,
-        gradientToColors: [window.colors.solid.primary, $strokeColor],
+        gradientToColors: [window.colors.solid.success, $strokeColor],
         shadeIntensity: 1,
         type: 'horizontal',
         opacityFrom: 1,
@@ -463,7 +463,7 @@ $(window).on('load', function () {
     stroke: {
       width: 0
     },
-    colors: [window.colors.solid.primary, window.colors.solid.info],
+    colors: [window.colors.solid.success, window.colors.solid.info],
     plotOptions: {
       radar: {
         polygons: {
@@ -476,7 +476,7 @@ $(window).on('load', function () {
       type: 'gradient',
       gradient: {
         shade: 'dark',
-        gradientToColors: [window.colors.solid.primary, window.colors.solid.info],
+        gradientToColors: [window.colors.solid.success, window.colors.solid.info],
         shadeIntensity: 1,
         type: 'horizontal',
         opacityFrom: 1,
@@ -547,7 +547,7 @@ $(window).on('load', function () {
       gradient: {
         shade: 'dark',
         inverseColors: false,
-        gradientToColors: [window.colors.solid.primary],
+        gradientToColors: [window.colors.solid.success],
         shadeIntensity: 1,
         type: 'horizontal',
         opacityFrom: 1,
@@ -621,7 +621,7 @@ $(window).on('load', function () {
     comparedResult: [2, -3, 8],
     labels: ['Desktop', 'Mobile', 'Tablet'],
     stroke: { width: 0 },
-    colors: [window.colors.solid.primary, window.colors.solid.warning, window.colors.solid.danger]
+    colors: [window.colors.solid.success, window.colors.solid.warning, window.colors.solid.danger]
   };
   sessionChart = new ApexCharts($sessionChart, sessionChartOptions);
   sessionChart.render();
@@ -645,7 +645,7 @@ $(window).on('load', function () {
     stroke: {
       width: 4
     },
-    colors: [window.colors.solid.primary, window.colors.solid.warning, window.colors.solid.danger]
+    colors: [window.colors.solid.success, window.colors.solid.warning, window.colors.solid.danger]
   };
   customerChart = new ApexCharts($customerChart, customerChartOptions);
   customerChart.render();
@@ -657,7 +657,7 @@ $(window).on('load', function () {
       height: 325,
       type: 'radialBar'
     },
-    colors: [window.colors.solid.primary, window.colors.solid.warning, window.colors.solid.danger],
+    colors: [window.colors.solid.success, window.colors.solid.warning, window.colors.solid.danger],
     stroke: {
       lineCap: 'round'
     },

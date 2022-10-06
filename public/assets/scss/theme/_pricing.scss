@@ -40,7 +40,7 @@
     }
   }
 }
-$svg-dark: $primary-color;
+$svg-dark: $success-color;
 .pricing-active {
   svg {
     g {
@@ -52,17 +52,17 @@ $svg-dark: $primary-color;
   }
 }
 .pricing-block {
-  box-shadow: 0 0 10px 5px rgba($primary-color, 0.05);
+  box-shadow: 0 0 10px 5px rgba($success-color, 0.05);
   svg {
     g {
       path {
-        fill: $primary-color;
+        fill: $success-color;
       }
     }
   }
-  &.bg-primary{
+  &.bg-success{
     .pricing-inner{
-      .btn-primary{
+      .btn-success{
         $svg-dark1: darken($svg-dark, 5%);
         background-color: $svg-dark1 !important;
         border-color: $svg-dark1 !important;
@@ -94,7 +94,7 @@ $svg-dark: $primary-color;
   }
 }
 .pricing-simple{
-  box-shadow: 0 0 10px 5px rgba($primary-color, 0.05);
+  box-shadow: 0 0 10px 5px rgba($success-color, 0.05);
   .card-body{
     border-bottom: none;
     h3{

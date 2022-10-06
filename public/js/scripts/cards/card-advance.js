@@ -12,40 +12,40 @@
 $(window).on('load', function () {
   var $trackBgColor = '#e9ecef';
 
-  var employeePrimaryChartOptions1;
+  var employeesuccessChartOptions1;
   var employeeDangerChartOptions;
   var employeeSuccessChartOptions;
   var employeeSecondaryChartOptions;
   var employeeWarningChartOptions;
-  var employeePrimaryChartOptions2;
+  var employeesuccessChartOptions2;
 
-  var employeePrimaryChart1;
+  var employeesuccessChart1;
   var employeeDangerChart;
   var employeeSuccessChart;
   var employeeSecondaryChart;
   var employeeWarningChart;
-  var employeePrimaryChart2;
+  var employeesuccessChart2;
 
-  var $employeeChartPrimary1 = document.querySelector('.employee-task-chart-primary-1');
+  var $employeeChartsuccess1 = document.querySelector('.employee-task-chart-success-1');
   var $employeeChartDanger = document.querySelector('.employee-task-chart-danger');
   var $employeeChartSuccess = document.querySelector('.employee-task-chart-success');
   var $employeeChartSecondary = document.querySelector('.employee-task-chart-secondary');
   var $employeeChartWarning = document.querySelector('.employee-task-chart-warning');
-  var $employeeChartPrimary2 = document.querySelector('.employee-task-chart-primary-2');
+  var $employeeChartsuccess2 = document.querySelector('.employee-task-chart-success-2');
 
-  var statePrimaryChartOptions;
+  var statesuccessChartOptions;
   var stateWarningChartOptions;
   var stateSecondaryChartOptions;
   var stateInfoChartOptions;
   var stateDangerChartOptions;
 
-  var statePrimaryChart;
+  var statesuccessChart;
   var stateDangerChart;
   var stateInfoChart;
   var stateSecondaryChart;
   var stateWarningChart;
 
-  var $stateChartPrimary = document.querySelector('.state-chart-primary');
+  var $stateChartsuccess = document.querySelector('.state-chart-success');
   var $stateChartWarning = document.querySelector('.state-chart-warning');
   var $stateChartSecondary = document.querySelector('.state-chart-secondary');
   var $stateChartInfo = document.querySelector('.state-chart-info');
@@ -67,8 +67,8 @@ $(window).on('load', function () {
   //------------ Employee Task Charts ------------
   //----------------------------------------------
 
-  // Employee Primary Chart 1
-  employeePrimaryChartOptions1 = {
+  // Employee success Chart 1
+  employeesuccessChartOptions1 = {
     chart: {
       height: 30,
       width: 30,
@@ -83,7 +83,7 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.primary],
+    colors: [window.colors.solid.success],
     series: [45],
     plotOptions: {
       radialBar: {
@@ -108,8 +108,8 @@ $(window).on('load', function () {
       lineCap: 'round'
     }
   };
-  employeePrimaryChart1 = new ApexCharts($employeeChartPrimary1, employeePrimaryChartOptions1);
-  employeePrimaryChart1.render();
+  employeesuccessChart1 = new ApexCharts($employeeChartsuccess1, employeesuccessChartOptions1);
+  employeesuccessChart1.render();
 
   // Employee Danger Chart
   employeeDangerChartOptions = {
@@ -287,8 +287,8 @@ $(window).on('load', function () {
   employeeWarningChart = new ApexCharts($employeeChartWarning, employeeWarningChartOptions);
   employeeWarningChart.render();
 
-  // Employee Primary Chart 2
-  employeePrimaryChartOptions2 = {
+  // Employee success Chart 2
+  employeesuccessChartOptions2 = {
     chart: {
       height: 30,
       width: 30,
@@ -303,7 +303,7 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.primary],
+    colors: [window.colors.solid.success],
     series: [80],
     plotOptions: {
       radialBar: {
@@ -328,14 +328,14 @@ $(window).on('load', function () {
       lineCap: 'round'
     }
   };
-  employeePrimaryChart2 = new ApexCharts($employeeChartPrimary2, employeePrimaryChartOptions2);
-  employeePrimaryChart2.render();
+  employeesuccessChart2 = new ApexCharts($employeeChartsuccess2, employeesuccessChartOptions2);
+  employeesuccessChart2.render();
 
   //---------------- State Charts ----------------
   //----------------------------------------------
 
-  // State Primary Chart
-  statePrimaryChartOptions = {
+  // State success Chart
+  statesuccessChartOptions = {
     chart: {
       height: 30,
       width: 30,
@@ -350,7 +350,7 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.primary],
+    colors: [window.colors.solid.success],
     series: [54.4],
     plotOptions: {
       radialBar: {
@@ -375,8 +375,8 @@ $(window).on('load', function () {
       lineCap: 'round'
     }
   };
-  statePrimaryChart = new ApexCharts($stateChartPrimary, statePrimaryChartOptions);
-  statePrimaryChart.render();
+  statesuccessChart = new ApexCharts($stateChartsuccess, statesuccessChartOptions);
+  statesuccessChart.render();
 
   // State Warning Chart
   stateWarningChartOptions = {
