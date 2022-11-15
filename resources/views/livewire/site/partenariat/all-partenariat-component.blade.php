@@ -50,9 +50,10 @@
                                     <td>{{$partner->object_partener_id}}</td>
                                     <td>{{$partner->year_signature}}</td>
                                     <td>
-                                    <a href="{{route('partner.detail',['id' => $partner->id])}}"> <i class="fa fa-list fa-1x m-5 text-success"></i> </a>
-                                    <a href="{{route('partner.edit',['id' => $partner->id])}}"> <i class="fa fa-edit fa-1x m-5 text-warning"></i> </a>
-                                    <a href="#" wire:click.prevent="deletePartner({{$partner->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
+                                    <a type="button" data-container="body" data-toggle="popover" data-placement="top" title="Détail" href="{{route('partner.detail',['id' => $partner->id])}}"> <i class="fa fa-list fa-1x text-success"></i> </a>
+                                    <a type="button" data-container="body" data-toggle="popover" data-placement="top" title="Modification" href="{{route('partner.edit',['id' => $partner->id])}}"> <i class="fa fa-edit fa-1x text-warning"></i> </a>
+                                    {{-- <a type="button" data-container="body" data-toggle="popover" data-placement="top" title="Add Activité" href="" data-bs-toggle="modal" data-bs-target="#modalActivite" wire:click.prevent='getElementById({{ $partner->id }})'>  <i class="fa fa-plus text-warning"></i> </a> --}}
+                                    <a type="button" data-container="body" data-toggle="popover" data-placement="top" title="Supprimer" href="#" wire:click.prevent="deletePartner({{$partner->id}})"> <i class="fa fa-trash-o fa-1x text-danger"></i> </a>
                                     </td>
                                 </tr>
 
@@ -70,11 +71,36 @@
     </div>
 
     <!-- Container-fluid Ends-->
-    {{-- @include('livewire.dashboard.formation.modal') --}}
+    @include('livewire.site.partenariat.modalActivite')
 </div>
 
 
 @section('scripts')
+<script src="{{ asset('assets/js/bootstrap/popper.min.js') }}"></script>
+<script src="{{ asset('assets/js/tooltip-init.js') }}"></script>
+<script src="{{ asset('assets/js/popover-custom.js') }}"></script>
 <script src="{{asset('assets/js/datatable/datatables/jquery.dataTables.min.js')}}"></script>
 <script src="{{asset('assets/js/datatable/datatables/datatable.custom.js')}}"></script>
+<script src="{{ asset('assets/js/select2/select2.full.min.js') }}"></script>
+    <script src="{{ asset('assets/js/select2/select2-custom.js') }}"></script>
+    <script src="{{ asset('assets/js/datepicker/date-time-picker/moment.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datepicker/date-time-picker/tempusdominus-bootstrap-4.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datepicker/date-time-picker/datetimepicker.custom.js') }}"></script>
+    <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.js') }}"></script>
+    <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
+    <script src="{{ asset('assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
+    <script>
+        $("#object").on('change', function() {
+            @this.object_partener_id = $(this).val();
+        });
+
+        $("#type").on('change', function() {
+            @this.type_id = $(this).val();
+        });
+
+        $("#partenaire").on('change',function() {
+            @this.partenaire_id = $(this).val();
+        });
+
+    </script>
 @endsection

@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\activitie;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class uacStructure extends Model
 {
@@ -12,4 +13,8 @@ class uacStructure extends Model
         'name',
 
     ];
+    public function activitie()
+    {
+        return $this->belongsTo(activitie::class);
+    }
 }

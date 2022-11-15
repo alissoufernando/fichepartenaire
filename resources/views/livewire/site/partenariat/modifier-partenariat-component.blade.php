@@ -92,16 +92,16 @@
                                             <h4 class="text-center mt-3 mb-3"> 6. Différentes activités exécutées depuis
                                                 la date de signature de l’accord</h4>
                                         </div>
-                                        <div class="col-md-12">
+                                        {{-- <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label class="form-label" for="name">Combien d'activités avez-vous
                                                     effectuées ?</label>
                                                 <input class="form-control" id="" type="number"
                                                     placeholder="Veuillez saisir le nombre d'activité effectuées" wire:model="nmber">
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
-                                    @if ($this->nmber > 0)
+                                    {{-- @if ($this->nmber > 0)
 
                                         <div class="card">
                                             <div class="card-header bg-success">
@@ -258,7 +258,7 @@
                                         </div>
 
 
-                                    @endif
+                                    @endif --}}
 
                                     <div class="row">
                                         <div class="col-md-12">

@@ -6,7 +6,7 @@
 @section('breadcrumb-title', 'Detail')
 @section('breadcrumb-items')
 <li class="breadcrumb-item">Tableau de bord</li>
-<li class="breadcrumb-item active">Détail d'une partenariat</li>
+<li class="breadcrumb-item active">Détail d'un partenariat</li>
 @endsection
 <div>
     <!-- Container-fluid starts-->
@@ -16,7 +16,10 @@
             <div wire:ignore class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Détail d'une partenariat</h5>
+                        <h5 class="d-inline">Détail d'un partenariat</h5>
+                        <a href="{{ route('mes.partenariat') }}" class="btn btn-success btn-sm float-end">
+                            Mes partenariats
+                        </a>
                     </div>
                     <div class="card-body">
 
@@ -88,48 +91,57 @@
                           </h2>
                           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                             <div class="accordion-body">
-                               @empty($partner->activitie->entitled)
-                                <h4>Aucune activité n'est associée a ce partenariat</h4>
-                                @else
-                                <div class="table-responsive">
-                                    <table class="table">
-                                      <thead class="table-success">
-                                        <tr>
-                                          <th scope="col">N°</th>
-                                          <th scope="col">Intitulé</th>
-                                          <th scope="col">Valeur</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <th scope="row">1</th>
-                                          <td>Nom de l'activité</td>
-                                          <td>{{ $partner->activitie->entitled }}</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">2</th>
-                                          <td>Date d'exécution</td>
-                                          <td>{{$partner->activitie->year_of_execution}}</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">3</th>
-                                          <td>Les structures associées</td>
-                                          <td>{{$partner->activitie->uac_structure_id}}</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>les entitées associées</td>
-                                            <td>{{$partner->activitie->uac_entitie_id}}</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">5</th>
-                                            <td>les résultats</td>
-                                            <td>{{$partner->activitie->resultat }}</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                </div>
-                                @endempty
+                               @if($activities->count() > 0)
+                               <div class="table-responsive">
+                                @php
+                                  $i =1;
+                                @endphp
+                                   @foreach ($activities as $activitie)
+                                   <h4>Activité N° {{ $i++ }}</h4>
+                                   <table class="table">
+                                     <thead class="table-success">
+                                       <tr>
+                                         <th scope="col">N°</th>
+                                         <th scope="col">Intitulé</th>
+                                         <th scope="col">Valeur</th>
+                                       </tr>
+                                     </thead>
+                                     <tbody>
+                                       <tr>
+                                         <th scope="row">1</th>
+                                         <td>Nom de l'activité</td>
+                                         <td>{{ $activitie->entitled }}</td>
+                                       </tr>
+                                       <tr>
+                                         <th scope="row">2</th>
+                                         <td>Date d'exécution</td>
+                                         <td>{{$activitie->year_of_execution}}</td>
+                                       </tr>
+                                       <tr>
+                                         <th scope="row">3</th>
+                                         <td>Les structures associées</td>
+                                         <td>{{$activitie->uac_structure_id}}</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">4</th>
+                                           <td>les entitées associées</td>
+                                           <td>{{$activitie->uac_entitie_id}}</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">5</th>
+                                           <td>les résultats</td>
+                                           {{-- <td>{{ explode(', ', $activitie->resultat) }}</td> --}}
+                                           <td>{{ $activitie->resultat }}</td>
+
+                                       </tr>
+                                     </tbody>
+                                   </table>
+                                   <hr>
+                                   @endforeach
+                               </div>
+                               @else
+                               <h4>Aucune activité n'est associée a ce partenariat</h4>
+                                @endif
 
                                 </div>
                           </div>

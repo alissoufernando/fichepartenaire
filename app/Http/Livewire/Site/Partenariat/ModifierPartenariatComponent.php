@@ -14,9 +14,9 @@ use App\Models\objectPartener;
 
 class ModifierPartenariatComponent extends Component
 {
-    public $entitled, $year_of_execution, $partner_id, $uac_structure_id = [],$uac_structure_n = 0, $uac_entitie_id=[], $uac_entitie_n =0, $resultat;
+    // public $entitled, $year_of_execution, $partner_id, $uac_structure_id = [],$uac_structure_n = 0, $uac_entitie_id=[], $uac_entitie_n =0, $resultat;
     public $partenaire_id,  $type_id, $object_partener_id=[], $year_signature, $year_collect, $suggestions, $difficults;
-    public $email, $phone, $phone_whatsapp, $identite, $poste , $id_otherInfo, $id_activitie, $id_partner,$id_user;
+    public $email, $phone, $phone_whatsapp, $identite, $poste , $id_otherInfo, $id_activitie, $id_partner,$id_user, $partner_id;
 
     public $is_whatsapp=0, $nmber=0 ,$nmbResulttat = 1;
 
@@ -25,7 +25,7 @@ class ModifierPartenariatComponent extends Component
         // Clean errors if were visible before
         $this->resetErrorBag();
         $this->resetValidation();
-        $this->reset(['email','phone','phone_whatsapp','id_otherInfo','id_partner','id_user','id_activitie','identite','poste', 'entitled', 'year_of_execution', 'partner_id','uac_structure_id', 'uac_entitie_id', 'resultat','type_id','object_partener_id','difficults', 'suggestions','year_collect','year_signature']);
+        $this->reset(['email','phone','phone_whatsapp','id_otherInfo','id_partner','id_user','identite','poste',  'partner_id', 'type_id','object_partener_id','difficults', 'suggestions','year_collect','year_signature']);
 
     }
     public function ajoutResultat(){
@@ -49,14 +49,7 @@ class ModifierPartenariatComponent extends Component
         $this->identite = $myPartner->otherInfo->identite;
         $this->poste =$myPartner->otherInfo->poste;
 
-        $this->entitled = $myPartner->activitie->entitled;
-        $this->year_of_execution =  $myPartner->activitie->year_of_execution;
-        $this->uac_structure_id =   explode(",",$myPartner->activitie->uac_structure_id);
-        $this->uac_entitie_id = explode(",",$myPartner->activitie->uac_entitie_id);
-        $this->resultat =  $myPartner->activitie->resultat;
-
         $this->id_otherInfo = $myPartner->otherInfo->id;
-        $this->id_activitie = $myPartner->activitie->id;
         $this->type_id = $myPartner->type_id;
         $this->object_partener_id = explode(",",$myPartner->object_partener_id);
         $this->partenaire_id = $myPartner->partenaire_id;
@@ -99,31 +92,31 @@ class ModifierPartenariatComponent extends Component
             $otherInfo->save();
 
 
-            $activitie = activitie::find($this->id_activitie);
+            // $activitie = activitie::find($this->id_activitie);
 
-            if($this->nmber == 0)
-            {
-                $activitie->entitled = null;
-                $activitie->year_of_execution = null;
-                $activitie->uac_structure_id = null;
-                $activitie->uac_entitie_id = null;
-                $activitie->resultat = null;
-                $activitie->save();
-            }else{
-                $activitie->entitled = $this->entitled;
-                $activitie->year_of_execution = $this->year_of_execution;
-                $activitie->uac_structure_id = implode(",",$this->uac_structure_id);
-                $activitie->uac_entitie_id = implode(",",$this->uac_entitie_id);
-                $activitie->resultat = $this->resultat;
-                $activitie->save();
-            }
+            // if($this->nmber == 0)
+            // {
+            //     $activitie->entitled = null;
+            //     $activitie->year_of_execution = null;
+            //     $activitie->uac_structure_id = null;
+            //     $activitie->uac_entitie_id = null;
+            //     $activitie->resultat = null;
+            //     $activitie->save();
+            // }else{
+            //     $activitie->entitled = $this->entitled;
+            //     $activitie->year_of_execution = $this->year_of_execution;
+            //     $activitie->uac_structure_id = implode(",",$this->uac_structure_id);
+            //     $activitie->uac_entitie_id = implode(",",$this->uac_entitie_id);
+            //     $activitie->resultat = $this->resultat;
+            //     $activitie->save();
+            // }
 
 
             $partner = partner::find($this->id_partner);
 
             // dd($id_otherInfo->id, $id_activitie->id);
             $partner->other_info_id = $this->id_otherInfo;
-            $partner->activitie_id = $this->id_activitie;
+            // $partner->activitie_id = $this->id_activitie;
             $partner->type_id = $this->type_id;
             $partner->user_id = $this->id_user;
             $partner->object_partener_id = implode(",",$this->object_partener_id);

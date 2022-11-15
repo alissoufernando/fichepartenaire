@@ -36,10 +36,10 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
-                                            <div wire:ignore class="mb-3">
+                                            <div wire:ignore  class="mb-3">
                                                 <div class="col-form-label">2. Intitulé de l’institution partenaire
                                                     (Veuillez mentionner le nom de votre organisation)</div>
-                                                <select class="js-example-basic-single col-sm-12"
+                                                <select  class="js-example-basic-single col-sm-12"
                                                     wire:model="partenaire_id" id="partenaire" required>
                                                     <option value="0">Veuillez choisir le nom de votre organisation</option>
                                                     @foreach ($partenaires as $partenaire)
@@ -62,8 +62,8 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12">
-                                            <div wire:ignore class="mb-3">
+                                        <div wire:ignore class="col-sm-12">
+                                            <div class="mb-3">
                                                 <div class="col-form-label">4. Quel est l'objet ou quels sont les objets
                                                     du partenariat ? (plusieurs choix sont possibles, si l'intitulé d'un
                                                     objet n'est pas dans la liste, il faut sélectionner "Autre (à
@@ -88,20 +88,20 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
+                                        {{-- <div class="col-md-12">
                                             <h4 class="text-center mt-3 mb-3"> 6. Différentes activités exécutées depuis
                                                 la date de signature de l’accord</h4>
-                                        </div>
-                                        <div class="col-md-12">
+                                        </div> --}}
+                                        {{-- <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label class="form-label" for="name">Combien d'activités avez-vous
                                                     effectuées ?</label>
                                                 <input class="form-control" id="" type="number"
                                                     placeholder="Veuillez saisir le nombre d'activité effectuées" wire:model="nmber">
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
-                                    @if ($this->nmber > 0)
+                                    {{-- @if ($this->nmber > 0)
 
                                         <div class="card">
                                             <div class="card-header bg-success">
@@ -258,11 +258,11 @@
                                         </div>
 
 
-                                    @endif
+                                    @endif --}}
 
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h4 class="text-center mt-3 mb-3">7. Dans l'exécution du partenariat entre
+                                            <h4 class="text-center mt-3 mb-3">6. Dans l'exécution du partenariat entre
                                                 votre structure et l'UAC,
                                                 quelles sont les difficultés que vous avez rencontrées ?</h4>
                                         </div>
@@ -275,7 +275,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <h4 class="text-center mt-3 mb-3">8. Quelles sont les suggestions que vous
+                                            <h4 class="text-center mt-3 mb-3">7. Quelles sont les suggestions que vous
                                                 pouvez formuler pour aplanir
                                                 ces difficultés ?</h4>
                                         </div>
@@ -288,12 +288,12 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <h4 class="text-center mt-3 mb-3">9. Quelques renseignements importants
+                                            <h4 class="text-center mt-3 mb-3">8. Quelques renseignements importants
                                             </h4>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="mb-3 mt-3">
-                                                <label class="form-label" for="name">9.1 Par quelle adresse email
+                                                <label class="form-label" for="name">8.1 Par quelle adresse email
                                                     fonctionnelle peut-on
                                                     contacter votre structure ?</label>
                                                 <input class="form-control" type="email" name="email"
@@ -302,7 +302,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="mb-3 mt-3">
-                                                <label class="form-label" for="name">9.2 Par quel numéro de
+                                                <label class="form-label" for="name">8.2 Par quel numéro de
                                                     téléphone fonctionnel peut-on
                                                     joindre votre organisation ?</label>
                                                 <input class="form-control" type="tel" name="phone"
@@ -310,7 +310,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <h6>9.3 Avez-vous un numéro de téléphone WhatsApp ?</h6>
+                                            <h6>8.3 Avez-vous un numéro de téléphone WhatsApp ?</h6>
 
                                             <div class="col">
                                                 <div class="form-group m-t-15 m-checkbox-inline mb-0 custom-radio-ml">
@@ -339,7 +339,7 @@
                                         @endif
                                         <div class="col-md-12">
                                             <div class="mb-3 mt-3">
-                                                <label class="form-label" for="identite">9.4 Quels sont le nom et les
+                                                <label class="form-label" for="identite">8.4 Quels sont le nom et les
                                                     prénoms du répondant
                                                     ?</label>
                                                 <input class="form-control" type="name" name="identite"
@@ -348,7 +348,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="mb-3 mt-3">
-                                                <label class="form-label" for="poste">9.5 Quel est le poste occupé
+                                                <label class="form-label" for="poste">8.5 Quel est le poste occupé
                                                     par le répondant au sein de
                                                     la structure ?</label>
                                                 <input class="form-control" type="text" name="poste"
@@ -362,13 +362,10 @@
                                         </div>
                                     </div>
                                     <div>
-                                        @if ($this->nmber == 0)
-                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="btn btn-success btn-sm"> Soumettre</a>
 
-                                        @else
 
                                         <button type="submit" class="btn btn-success btn-sm"> Soumettre</button>
-                                        @endif
+
                                     </div>
                                 </form>
                             </div>
@@ -379,7 +376,7 @@
         </div>
     </div>
     <!-- Container-fluid Ends-->
-    @include('livewire.site.partenariat.modal')
+    {{-- @include('livewire.site.partenariat.modal') --}}
 
 </div>
 @section('scripts')
