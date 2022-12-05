@@ -21,7 +21,7 @@ class AllPartenariatComponent extends Component
         // Clean errors if were visible before
         $this->resetErrorBag();
         $this->resetValidation();
-        $this->reset(['entitled', 'year_of_execution','uac_structure_id', 'uac_entitie_id', 'resultat']);
+        $this->reset(['entitled', 'year_of_execution','uac_structure_id', 'uac_entitie_id', 'resultat','uac_structure_n','uac_entitie_n']);
 
     }
        // Add une cadre institutionnel

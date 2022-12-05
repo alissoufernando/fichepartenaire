@@ -43,7 +43,7 @@
                                             impliquées (Veuillez choisir dans la liste suivante)
                                         </div>
                                         <div class="col">
-                                            @if ($this->uac_entitie_n == 1)
+                                            {{-- @if ($this->uac_entitie_n == 1)
                                             <label class="d-block" for="chk-ani" style="cursor: not-allowed;">
                                                 <input class="checkbox_animated mb-3"
                                                     type="checkbox" value=""
@@ -58,7 +58,7 @@
                                                 {{ $structure->name }}
                                             </label>
                                             @endforeach
-                                            @else
+                                            @else --}}
                                             <label class="d-block" for="chk-ani">
                                                 <input class="checkbox_animated mb-3"
                                                     type="checkbox" value="1"
@@ -85,7 +85,7 @@
                                             </label>
                                             @endforeach
                                             @endif
-                                            @endif
+                                            {{-- @endif --}}
                                         </div>
 
                                     </div>
@@ -96,7 +96,7 @@
                                             Recherche impliquées (Veuillez choisir dans la liste
                                             suivante)</div>
                                         <div class="col">
-                                            @if ($this->uac_structure_n == 1)
+                                            {{-- @if ($this->uac_structure_n == 1)
 
                                             <label class="d-block" for="chk-ani" style="cursor: not-allowed;" >
                                                 <input class="checkbox_animated mb-3"
@@ -112,7 +112,7 @@
                                                     {{ $formation->name }}
                                                 </label>
                                             @endforeach
-                                            @else
+                                            @else --}}
 
                                             <label class="d-block" for="chk-ani">
                                                 <input class="checkbox_animated mb-3"
@@ -140,7 +140,7 @@
                                                 </label>
                                             @endforeach
                                             @endif
-                                            @endif
+                                            {{-- @endif --}}
                                         </div>
                                     </div>
                                 </div>
